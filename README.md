@@ -1,5 +1,5 @@
 # Oversight
-A game where you play as a watch tower who must guess its way in searching for the troublemaker down below. Search for hints to succeed and prevent them from attacking you.
+A game where you play as a stationary watchtower who must guess its way in searching for the troublemaker down below. Look at the hint to succeed and prevent the enemy from destroying you.
 
 Game Loop:
 1. There are two players or a player and an AI. Player 1 is the Watch Tower, Player 2 (which can be an AI) is the troublemaker.

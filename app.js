@@ -26,6 +26,7 @@ function watchtowerSearch() {
         console.log("Area 1 has been Searched");
         if (computerChoice == 1) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");
@@ -37,6 +38,7 @@ function watchtowerSearch() {
         console.log("Area 2 has been Searched");
         if (computerChoice == 2) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");
@@ -48,6 +50,7 @@ function watchtowerSearch() {
         console.log("Area 3 has been Searched");
         if (computerChoice == 3) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");
@@ -59,6 +62,7 @@ function watchtowerSearch() {
         console.log("Area 4 has been Searched");
         if (computerChoice == 4) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");
@@ -70,6 +74,7 @@ function watchtowerSearch() {
         console.log("Area 5 has been Searched");
         if (computerChoice == 5) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");
@@ -81,6 +86,7 @@ function watchtowerSearch() {
         console.log("Area 6 has been Searched");
         if (computerChoice == 6) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");
@@ -92,6 +98,7 @@ function watchtowerSearch() {
         console.log("Area 7 has been Searched");
         if (computerChoice == 7) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");
@@ -103,6 +110,7 @@ function watchtowerSearch() {
         console.log("Area 8 has been Searched");
         if (computerChoice == 8) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");
@@ -114,6 +122,7 @@ function watchtowerSearch() {
         console.log("Area 9 has been Searched");
         if (computerChoice == 9) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");
@@ -125,6 +134,7 @@ function watchtowerSearch() {
         console.log("Area 10 has been Searched");
         if (computerChoice == 10) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");
@@ -136,6 +146,7 @@ function watchtowerSearch() {
         console.log("Area 11 has been Searched");
         if (computerChoice == 11) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");
@@ -147,6 +158,7 @@ function watchtowerSearch() {
         console.log("Area 12 has been Searched");
         if (computerChoice == 12) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");
@@ -158,6 +170,7 @@ function watchtowerSearch() {
         console.log("Area 13 has been Searched");
         if (computerChoice == 13) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");
@@ -169,6 +182,7 @@ function watchtowerSearch() {
         console.log("Area 14 has been Searched");
         if (computerChoice == 14) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");
@@ -180,6 +194,7 @@ function watchtowerSearch() {
         console.log("Area 15 has been Searched");
         if (computerChoice == 15) {
             alert("You found the Troublemaker");
+            alert("Mission Accomplished");
             location.reload();
         } else {
             alert("The Troublemaker was not Found");

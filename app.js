@@ -13,13 +13,13 @@ function watchtowerSearch() {
 
     let computerChoice = Math.floor(Math.random() * 15 + 1)
     if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
-        intelligence.innerText = "Intelligence: Troublemaker detected around the Western areas";
+        intelligence.innerText = "Intelligence: Movement discovered in the Western areas";
     }
     if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
-        intelligence.innerText = "Intelligence: Troublemaker detected around the Eastern areas";
+        intelligence.innerText = "Intelligence: Sensors pick up noises in the Eastern areas";
     }
     if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
-        intelligence.innerText = "Intelligence: Troublemaker detected around the Central areas";
+        intelligence.innerText = "Intelligence: Rumors of a figure in the Central areas";
     }
 
     hidingSpot[0].addEventListener("click", function () {

@@ -1,0 +1,97 @@
+h1 {
+    color: white;
+    background: black;
+    margin: 0px 0px 5px 0px;
+    text-align: center;
+}
+#watchTower {
+    text-align: center;
+    font-size: 200px;
+    padding-top: 100px;
+    color: white;
+    background: indigo;
+    block-size: 200px;
+}
+#tower {
+    transform: translate(0px, -275px);
+}
+.area {
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    background: red;
+    block-size: 490px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 37% 37% 37% 37% 37%;
+}
+#hidingSpot1 {
+    border: 5px solid purple;
+}
+#hidingSpot2 {
+    border-top: 5px solid purple;
+    border-right: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+#hidingSpot3 {
+    border-top: 5px solid purple;
+    border-right: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+#hidingSpot4 {
+    border-top: 5px solid purple;
+    border-right: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+#hidingSpot5 {
+    border-top: 5px solid purple;
+    border-right: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+#hidingSpot6 {
+    border-right: 5px solid purple;
+    border-bottom: 5px solid purple;
+    border-left: 5px solid purple;
+}
+#hidingSpot7 {
+    border-right: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+#hidingSpot8 {
+    border-right: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+#hidingSpot9 {
+    border-right: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+#hidingSpot10 {
+    border-right: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+#hidingSpot11 {
+    background: red;
+    border-right: 5px solid purple;
+    border-bottom: 5px solid purple;
+    border-left: 5px solid purple;
+}
+#hidingSpot12 {
+    background: red;
+    border-right: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+#hidingSpot13 {
+    background: red;
+    border-right: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+#hidingSpot14 {
+    background: red;
+    border-right: 5px solid purple;
+    border-bottom: 5px solid purple;
+}
+#hidingSpot15 {
+    background: red;
+    border-right: 5px solid purple;
+    border-bottom: 5px solid purple;
+}

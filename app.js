@@ -33,7 +33,7 @@ function successfulMission() {
     turns = 6;
     alert("You found the Troublemaker");
     music.setAttribute("src", "universalTriumph.mp3");
-    music.volume = 0.5;
+    music.volume = 0.1;
     alert("Mission Accomplished, target eliminated in Area " + computerChoice);
     intelligence.innerText = "Mission Accomplished, Click Here to Play Again";
     intelligence.addEventListener("click", function () {
@@ -53,6 +53,7 @@ function intel() {
         intelligence.innerText = "Scour the area, fire 3 shots to find the troublemaker!";
     }
     if (turns > 1 && turns < 4) {
+        intelligence.style.color = "orange";
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
             if (guess == 1) {
                 intelligence.innerText = "Report: The troublemaker is not in the Central Areas, 2 shots";
@@ -82,6 +83,7 @@ function intel() {
         }
     }
     if (turns >= 4) {
+        intelligence.style.color = "red";
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
             intelligence.innerText = "Intelligence: Movement discovered in the Western areas, 1 last shot";
         }

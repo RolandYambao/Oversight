@@ -1,17 +1,17 @@
 let hidingSpot = document.getElementsByClassName("hidingSpot");
 let intelligence = document.getElementById("intelligence");
+let computerChoice = Math.floor(Math.random() * 15 + 1)
 let turns = 0;
 
 function threeTurns() {
     if (turns == 3) {
-        alert("Mission Failed");
+        alert("Mission Failed, the Troublemaker was in Area " + computerChoice);
         location.reload();
     }
 }
 
 function watchtowerSearch() {
 
-    let computerChoice = Math.floor(Math.random() * 15 + 1)
     if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
         intelligence.innerText = "Intelligence: Movement discovered in the Western areas";
     }

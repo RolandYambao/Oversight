@@ -1,14 +1,18 @@
 let hidingSpot = document.getElementsByClassName("hidingSpot");
 let intelligence = document.getElementById("intelligence");
-let computerChoice = Math.floor(Math.random() * 15 + 1)
+let computerChoice = Math.floor(Math.random() * 15 + 1);
+let guess = Math.floor(Math.random() * 3 + 1);
 let turns = 0;
 let music = document.querySelector("#music");
 music.volume = 0.1;
 
-function threeTurns() {
-    if (turns == 3) {
+function sixTurns() {
+    if (turns == 6) {
         alert("Mission Failed, the Troublemaker was in Area " + computerChoice);
-        location.reload();
+        intelligence.innerText = "Mission Failed, we have been Destroyed, Click Here to Play Again";
+        intelligence.addEventListener("click", function () {
+            location.reload();
+        })
     }
 }
 function successfulMission() {
@@ -24,21 +28,58 @@ function successfulMission() {
 function failedMission() {
     alert("The Troublemaker was not Found");
     turns++;
-    threeTurns();
+    sixTurns();
+}
+function intel() {
+    if (turns < 1) {
+        intelligence.innerText = "Scour the area, fire 3 shots to find the troublemaker!";
+    }  
+    if (turns > 1 && turns < 4) {
+        if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
+            if (guess == 1) {
+                intelligence.innerText = "Report: The troublemaker is not in the Central Areas";
+            } else  if (guess == 2) {
+                intelligence.innerText = "Report: The troublemaker is not in the Central Areas";
+            } else {
+                intelligence.innerText = "Report: The troublemaker is not in the Eastern Areas";
+            }
+        }
+        if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
+            if (guess == 1) {
+                intelligence.innerText = "Report: The troublemaker is not in the Western Areas";
+            } else  if (guess == 2) {
+                intelligence.innerText = "Report: The troublemaker is not in the Central Areas";
+            } else {
+                intelligence.innerText = "Report: The troublemaker is not in the Western Areas";
+            }
+        }
+        if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
+            if (guess == 1) {
+                intelligence.innerText = "Report: The troublemaker is not in the Western Areas";
+            } else  if (guess == 2) {
+                intelligence.innerText = "Report: The troublemaker is not in the Eastern Areas";
+            } else {
+                intelligence.innerText = "Report: The troublemaker is not in the Eastern Areas";
+            }
+        }
+    }
+    if (turns >= 4) {
+        if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
+            intelligence.innerText = "Intelligence: Movement discovered in the Western areas";
+        }
+        if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
+            intelligence.innerText = "Intelligence: Sensors pick up noises in the Eastern areas";
+        }
+        if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
+            intelligence.innerText = "Intelligence: Rumors of a figure in the Central areas";
+        }
+    }
 }
 function watchtowerSearch() {
-
-    if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
-        intelligence.innerText = "Intelligence: Movement discovered in the Western areas";
-    }
-    if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
-        intelligence.innerText = "Intelligence: Sensors pick up noises in the Eastern areas";
-    }
-    if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
-        intelligence.innerText = "Intelligence: Rumors of a figure in the Central areas";
-    }
+    intel();
 
     hidingSpot[0].addEventListener("click", function () {
+        intel();
         hidingSpot[0].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[0].style.backgroundSize = "100% 100%";
         console.log("Area 1 has been Searched");
@@ -49,6 +90,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[1].addEventListener("click", function () {
+        intel();
         hidingSpot[1].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[1].style.backgroundSize = "100% 100%";
         console.log("Area 2 has been Searched");
@@ -59,6 +101,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[2].addEventListener("click", function () {
+        intel();
         hidingSpot[2].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[2].style.backgroundSize = "100% 100%";
         console.log("Area 3 has been Searched");
@@ -69,6 +112,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[3].addEventListener("click", function () {
+        intel();
         hidingSpot[3].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[3].style.backgroundSize = "100% 100%";
         console.log("Area 4 has been Searched");
@@ -79,6 +123,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[4].addEventListener("click", function () {
+        intel();
         hidingSpot[4].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[4].style.backgroundSize = "100% 100%";
         console.log("Area 5 has been Searched");
@@ -89,6 +134,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[5].addEventListener("click", function () {
+        intel();
         hidingSpot[5].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[5].style.backgroundSize = "100% 100%";
         console.log("Area 6 has been Searched");
@@ -99,6 +145,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[6].addEventListener("click", function () {
+        intel();
         hidingSpot[6].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[6].style.backgroundSize = "100% 100%";
         console.log("Area 7 has been Searched");
@@ -109,6 +156,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[7].addEventListener("click", function () {
+        intel();
         hidingSpot[7].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[7].style.backgroundSize = "100% 100%";
         console.log("Area 8 has been Searched");
@@ -119,6 +167,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[8].addEventListener("click", function () {
+        intel();
         hidingSpot[8].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[8].style.backgroundSize = "100% 100%";
         console.log("Area 9 has been Searched");
@@ -129,6 +178,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[9].addEventListener("click", function () {
+        intel();
         hidingSpot[9].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[9].style.backgroundSize = "100% 100%";
         console.log("Area 10 has been Searched");
@@ -139,6 +189,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[10].addEventListener("click", function () {
+        intel();
         hidingSpot[10].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[10].style.backgroundSize = "100% 100%";
         console.log("Area 11 has been Searched");
@@ -149,6 +200,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[11].addEventListener("click", function () {
+        intel();
         hidingSpot[11].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[11].style.backgroundSize = "100% 100%";
         console.log("Area 12 has been Searched");
@@ -159,6 +211,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[12].addEventListener("click", function () {
+        intel();
         hidingSpot[12].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[12].style.backgroundSize = "100% 100%";
         console.log("Area 13 has been Searched");
@@ -169,6 +222,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[13].addEventListener("click", function () {
+        intel();
         hidingSpot[13].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[13].style.backgroundSize = "100% 100%";
         console.log("Area 14 has been Searched");
@@ -179,6 +233,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[14].addEventListener("click", function () {
+        intel();
         hidingSpot[14].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[14].style.backgroundSize = "100% 100%";
         console.log("Area 15 has been Searched");

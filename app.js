@@ -2,6 +2,8 @@ let hidingSpot = document.getElementsByClassName("hidingSpot");
 let intelligence = document.getElementById("intelligence");
 let computerChoice = Math.floor(Math.random() * 15 + 1)
 let turns = 0;
+let music = document.querySelector("#music");
+music.volume = 0.1;
 
 function threeTurns() {
     if (turns == 3) {
@@ -11,6 +13,8 @@ function threeTurns() {
 }
 function successfulMission() {
     alert("You found the Troublemaker");
+    music.setAttribute("src", "tisForThee.mp3");
+    music.volume = 0.5;
     alert("Mission Accomplished, target eliminated in Area " + computerChoice);
     location.reload();
 }
@@ -32,7 +36,8 @@ function watchtowerSearch() {
     }
 
     hidingSpot[0].addEventListener("click", function () {
-        hidingSpot[0].style.background = "black";
+        hidingSpot[0].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[0].style.backgroundSize = "100% 100%";
         console.log("Area 1 has been Searched");
         if (computerChoice == 1) {
             successfulMission();
@@ -41,7 +46,8 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[1].addEventListener("click", function () {
-        hidingSpot[1].style.background = "black";
+        hidingSpot[1].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[1].style.backgroundSize = "100% 100%";
         console.log("Area 2 has been Searched");
         if (computerChoice == 2) {
             successfulMission();
@@ -50,7 +56,8 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[2].addEventListener("click", function () {
-        hidingSpot[2].style.background = "black";
+        hidingSpot[2].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[2].style.backgroundSize = "100% 100%";
         console.log("Area 3 has been Searched");
         if (computerChoice == 3) {
             successfulMission();
@@ -59,7 +66,8 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[3].addEventListener("click", function () {
-        hidingSpot[3].style.background = "black";
+        hidingSpot[3].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[3].style.backgroundSize = "100% 100%";
         console.log("Area 4 has been Searched");
         if (computerChoice == 4) {
             successfulMission();
@@ -68,7 +76,8 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[4].addEventListener("click", function () {
-        hidingSpot[4].style.background = "black";
+        hidingSpot[4].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[4].style.backgroundSize = "100% 100%";
         console.log("Area 5 has been Searched");
         if (computerChoice == 5) {
             successfulMission();
@@ -77,7 +86,8 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[5].addEventListener("click", function () {
-        hidingSpot[5].style.background = "black";
+        hidingSpot[5].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[5].style.backgroundSize = "100% 100%";
         console.log("Area 6 has been Searched");
         if (computerChoice == 6) {
             successfulMission();
@@ -86,7 +96,8 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[6].addEventListener("click", function () {
-        hidingSpot[6].style.background = "black";
+        hidingSpot[6].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[6].style.backgroundSize = "100% 100%";
         console.log("Area 7 has been Searched");
         if (computerChoice == 7) {
             successfulMission();
@@ -95,7 +106,8 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[7].addEventListener("click", function () {
-        hidingSpot[7].style.background = "black";
+        hidingSpot[7].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[7].style.backgroundSize = "100% 100%";
         console.log("Area 8 has been Searched");
         if (computerChoice == 8) {
             successfulMission();
@@ -104,7 +116,8 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[8].addEventListener("click", function () {
-        hidingSpot[8].style.background = "black";
+        hidingSpot[8].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[8].style.backgroundSize = "100% 100%";
         console.log("Area 9 has been Searched");
         if (computerChoice == 9) {
             successfulMission();
@@ -113,7 +126,8 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[9].addEventListener("click", function () {
-        hidingSpot[9].style.background = "black";
+        hidingSpot[9].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[9].style.backgroundSize = "100% 100%";
         console.log("Area 10 has been Searched");
         if (computerChoice == 10) {
             successfulMission();
@@ -122,7 +136,8 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[10].addEventListener("click", function () {
-        hidingSpot[10].style.background = "black";
+        hidingSpot[10].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[10].style.backgroundSize = "100% 100%";
         console.log("Area 11 has been Searched");
         if (computerChoice == 11) {
             successfulMission();
@@ -131,7 +146,8 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[11].addEventListener("click", function () {
-        hidingSpot[11].style.background = "black";
+        hidingSpot[11].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[11].style.backgroundSize = "100% 100%";
         console.log("Area 12 has been Searched");
         if (computerChoice == 12) {
             successfulMission();
@@ -140,7 +156,8 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[12].addEventListener("click", function () {
-        hidingSpot[12].style.background = "black";
+        hidingSpot[12].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[12].style.backgroundSize = "100% 100%";
         console.log("Area 13 has been Searched");
         if (computerChoice == 13) {
             successfulMission();
@@ -149,7 +166,8 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[13].addEventListener("click", function () {
-        hidingSpot[13].style.background = "black";
+        hidingSpot[13].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[13].style.backgroundSize = "100% 100%";
         console.log("Area 14 has been Searched");
         if (computerChoice == 14) {
             successfulMission();
@@ -158,7 +176,8 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[14].addEventListener("click", function () {
-        hidingSpot[14].style.background = "black";
+        hidingSpot[14].style.backgroundImage = "url(destroyedBuilding.jpg)";
+        hidingSpot[14].style.backgroundSize = "100% 100%";
         console.log("Area 15 has been Searched");
         if (computerChoice == 15) {
             successfulMission();

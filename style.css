@@ -1,3 +1,6 @@
+body {
+    position: relative;
+}
 h1 {
     color: white;
     background: black;
@@ -14,6 +17,16 @@ h1 {
 }
 #tower {
     transform: translate(0px, -275px);
+}
+#camera1 {
+    position: absolute;
+    border-radius: 150px;
+    transform: translate(-450px, -80px);
+}
+#camera2 {
+    position: absolute;
+    border-radius: 150px;
+    transform: translate(200px, -700px);
 }
 #intelligence {
     color: lightgreen;

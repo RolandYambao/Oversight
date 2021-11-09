@@ -13,10 +13,13 @@ function threeTurns() {
 }
 function successfulMission() {
     alert("You found the Troublemaker");
-    music.setAttribute("src", "tisForThee.mp3");
+    music.setAttribute("src", "universalTriumph.mp3");
     music.volume = 0.5;
     alert("Mission Accomplished, target eliminated in Area " + computerChoice);
-    location.reload();
+    intelligence.innerText = "Mission Accomplished, Click Here to Play Again";
+    intelligence.addEventListener("click", function () {
+        location.reload();
+    })
 }
 function failedMission() {
     alert("The Troublemaker was not Found");

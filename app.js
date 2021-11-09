@@ -8,7 +8,15 @@ music.volume = 0.1;
 
 function sixTurns() {
     if (turns == 6) {
+        music.setAttribute("src", "defeatMusic.mp3");
+        music.volume = 0.1;
         alert("Mission Failed, the Troublemaker was in Area " + computerChoice);
+        document.getElementById("title").innerHTML = "<strike>Oversight</strike>";
+        document.getElementById("tower").innerText = "X";
+        document.getElementById("watchTower").style.backgroundColor = "red";
+        for (let i = 0; i < 15; i++) {
+            hidingSpot[i].style.borderColor = "red";
+        }
         intelligence.innerText = "Mission Failed, we have been Destroyed, Click Here to Play Again";
         intelligence.addEventListener("click", function () {
             location.reload();
@@ -17,7 +25,7 @@ function sixTurns() {
 }
 function successfulMission() {
     alert("You found the Troublemaker");
-    music.setAttribute("src", "universalTriumph.mp3");
+    music.setAttribute("src", "tisforThee.mp3");
     music.volume = 0.5;
     alert("Mission Accomplished, target eliminated in Area " + computerChoice);
     intelligence.innerText = "Mission Accomplished, Click Here to Play Again";

@@ -28,11 +28,13 @@ h1 {
     text-align: center;
     font-weight: bolder;
     color: white;
-    background: red;
-    block-size: 490px;
+    background-image: url("ruinedCity.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    block-size: 525px;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 37% 37% 37% 37% 37%;
+    grid-template-rows: 33.5% 33.5% 33.5% 33.5% 33.5%;
 }
 #hidingSpot1 {
     border: 5px solid purple;
@@ -79,28 +81,23 @@ h1 {
     border-bottom: 5px solid purple;
 }
 #hidingSpot11 {
-    background: red;
     border-right: 5px solid purple;
     border-bottom: 5px solid purple;
     border-left: 5px solid purple;
 }
 #hidingSpot12 {
-    background: red;
     border-right: 5px solid purple;
     border-bottom: 5px solid purple;
 }
 #hidingSpot13 {
-    background: red;
     border-right: 5px solid purple;
     border-bottom: 5px solid purple;
 }
 #hidingSpot14 {
-    background: red;
     border-right: 5px solid purple;
     border-bottom: 5px solid purple;
 }
 #hidingSpot15 {
-    background: red;
     border-right: 5px solid purple;
     border-bottom: 5px solid purple;
 }

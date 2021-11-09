@@ -1,5 +1,8 @@
 let hidingSpot = document.getElementsByClassName("hidingSpot");
 let intelligence = document.getElementById("intelligence");
+let backgroundBanner = document.getElementById("watchTower");
+let camera1 =  document.getElementById("camera1");
+let camera2 =  document.getElementById("camera2");
 let computerChoice = Math.floor(Math.random() * 15 + 1);
 let guess = Math.floor(Math.random() * 3 + 1);
 let turns = 0;
@@ -12,8 +15,9 @@ function sixTurns() {
         music.volume = 0.1;
         alert("Mission Failed, the Troublemaker was in Area " + computerChoice);
         document.getElementById("title").innerHTML = "Oversight".strike();
-        document.getElementById("tower").innerText = "X";
-        document.getElementById("watchTower").style.backgroundColor = "red";
+        document.getElementById("tower").innerHTML = "&#9760;";
+        backgroundBanner.style.backgroundImage = "url(fire.gif)";
+        backgroundBanner.style.backgroundSize = "100% 100%";
         for (let i = 0; i < 15; i++) {
             hidingSpot[i].style.borderColor = "red";
         }
@@ -26,7 +30,7 @@ function sixTurns() {
 function successfulMission() {
     turns = 6;
     alert("You found the Troublemaker");
-    music.setAttribute("src", "tisForThee.mp3");
+    music.setAttribute("src", "universalTriumph.mp3");
     music.volume = 0.5;
     alert("Mission Accomplished, target eliminated in Area " + computerChoice);
     intelligence.innerText = "Mission Accomplished, Click Here to Play Again";

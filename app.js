@@ -11,7 +11,7 @@ function sixTurns() {
         music.setAttribute("src", "defeatMusic.mp3");
         music.volume = 0.1;
         alert("Mission Failed, the Troublemaker was in Area " + computerChoice);
-        document.getElementById("title").innerHTML = "<strike>Oversight</strike>";
+        document.getElementById("title").innerHTML = "Oversight".strike();
         document.getElementById("tower").innerText = "X";
         document.getElementById("watchTower").style.backgroundColor = "red";
         for (let i = 0; i < 15; i++) {
@@ -25,7 +25,7 @@ function sixTurns() {
 }
 function successfulMission() {
     alert("You found the Troublemaker");
-    music.setAttribute("src", "tisforThee.mp3");
+    music.setAttribute("src", "tisForThee.mp3");
     music.volume = 0.5;
     alert("Mission Accomplished, target eliminated in Area " + computerChoice);
     intelligence.innerText = "Mission Accomplished, Click Here to Play Again";
@@ -39,6 +39,9 @@ function failedMission() {
     sixTurns();
 }
 function intel() {
+    if (turns >= 6){
+        location.reload();
+    }
     if (turns < 1) {
         intelligence.innerText = "Scour the area, fire 3 shots to find the troublemaker!";
     }  

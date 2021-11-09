@@ -18,6 +18,8 @@ function sixTurns() {
         document.getElementById("tower").innerHTML = "&#9760;";
         backgroundBanner.style.backgroundImage = "url(fire.gif)";
         backgroundBanner.style.backgroundSize = "100% 100%";
+        camera1.style.display = "none";
+        camera2.style.display = "none";
         for (let i = 0; i < 15; i++) {
             hidingSpot[i].style.borderColor = "red";
         }
@@ -53,41 +55,41 @@ function intel() {
     if (turns > 1 && turns < 4) {
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
             if (guess == 1) {
-                intelligence.innerText = "Report: The troublemaker is not in the Central Areas";
+                intelligence.innerText = "Report: The troublemaker is not in the Central Areas, 2 shots";
             } else if (guess == 2) {
-                intelligence.innerText = "Report: The troublemaker is not in the Central Areas";
+                intelligence.innerText = "Report: The troublemaker is not in the Central Areas, 2 shots";
             } else {
-                intelligence.innerText = "Report: The troublemaker is not in the Eastern Areas";
+                intelligence.innerText = "Report: The troublemaker is not in the Eastern Areas, 2 shots";
             }
         }
         if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
             if (guess == 1) {
-                intelligence.innerText = "Report: The troublemaker is not in the Western Areas";
+                intelligence.innerText = "Report: The troublemaker is not in the Western Areas, 2 shots";
             } else if (guess == 2) {
-                intelligence.innerText = "Report: The troublemaker is not in the Central Areas";
+                intelligence.innerText = "Report: The troublemaker is not in the Central Areas, 2 shots";
             } else {
-                intelligence.innerText = "Report: The troublemaker is not in the Western Areas";
+                intelligence.innerText = "Report: The troublemaker is not in the Western Areas, 2 shots";
             }
         }
         if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
             if (guess == 1) {
-                intelligence.innerText = "Report: The troublemaker is not in the Western Areas";
+                intelligence.innerText = "Report: The troublemaker is not in the Western Areas, 2 shots";
             } else if (guess == 2) {
-                intelligence.innerText = "Report: The troublemaker is not in the Eastern Areas";
+                intelligence.innerText = "Report: The troublemaker is not in the Eastern Areas, 2 shots";
             } else {
-                intelligence.innerText = "Report: The troublemaker is not in the Eastern Areas";
+                intelligence.innerText = "Report: The troublemaker is not in the Eastern Areas, 2 shots";
             }
         }
     }
     if (turns >= 4) {
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
-            intelligence.innerText = "Intelligence: Movement discovered in the Western areas";
+            intelligence.innerText = "Intelligence: Movement discovered in the Western areas, 1 last shot";
         }
         if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
-            intelligence.innerText = "Intelligence: Sensors pick up noises in the Eastern areas";
+            intelligence.innerText = "Intelligence: Sensors pick up noises in the Eastern areas, 1 last shot";
         }
         if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
-            intelligence.innerText = "Intelligence: Rumors of a figure in the Central areas";
+            intelligence.innerText = "Intelligence: Rumors of a figure in the Central areas, 1 last shot";
         }
     }
 }

@@ -6,23 +6,37 @@ let camera2 = document.getElementById("camera2");
 let computerChoice = Math.floor(Math.random() * 15 + 1);
 let guess = Math.floor(Math.random() * 3 + 1);
 let turns = 0;
-let typeSpeed = 50;
 let music = document.querySelector("#music");
 const explosion = new Audio();
 explosion.src = "explosion.mp3";
-music.volume = 0.5;
 
+const machineVoice1 = new Audio();
+machineVoice1.src = "mechanicusVoice1.mp3";
+
+const machineVoice2 = new Audio();
+machineVoice2.src = "mechanicusVoice2.mp3";
+
+music.volume = 0.2;
+
+function machineVoice1Play() {
+    machineVoice1.play();
+    machineVoice1.volume = 0.5;
+}
+function machineVoice2Play () {
+    machineVoice2.play();
+    machineVoice2.volume = 0.5;
+}
 function typeWriter(phrase) {
     for (let i = 0; i < phrase.length; i++) {
-        intelligence.innerHTML += phrase.charAt(i);
-        setTimeout(typeWriter, typeSpeed);
+        setTimeout(function () {
+            intelligence.innerHTML += phrase.charAt(i);
+        }, 25*i);
     }
 }
 function sixTurns() {
     if (turns == 6) {
         music.setAttribute("src", "defeatMusic.mp3");
         music.volume = 0.5;
-        alert("Mission Failed, the Troublemaker was in Area " + computerChoice);
         document.getElementById("title").innerHTML = "Oversight".strike();
         document.getElementById("tower").innerHTML = "&#9760;";
         backgroundBanner.style.backgroundImage = "url(fire.gif)";
@@ -41,10 +55,9 @@ function sixTurns() {
 }
 function successfulMission() {
     turns = 6;
-    alert("You found the Troublemaker");
+    openFire();
     music.setAttribute("src", "universalTriumph.mp3");
     music.volume = 0.1;
-    alert("Mission Accomplished, target eliminated in Area " + computerChoice);
     intelligence.innerText = "";
     typeWriter("Mission Accomplished, Click Here to Play Again");
     intelligence.style.color = "white";
@@ -53,7 +66,6 @@ function successfulMission() {
     })
 }
 function failedMission() {
-    alert("The Troublemaker was not Found");
     turns++;
     sixTurns();
 }
@@ -61,45 +73,50 @@ function intel() {
     if (turns >= 6) {
         location.reload();
     }
-    if (turns == 0) {
-        intelligence.innerText = "";
-        typeWriter("Scour the area, fire 3 shots to find the troublemaker!");
-    }
     if (turns == 2) {
         intelligence.style.color = "orange";
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
             if (guess == 1) {
                 intelligence.innerText = "";
+                machineVoice2Play();
                 typeWriter("Report: The troublemaker is NOT in the Central Areas, 2 shots");
             } else if (guess == 2) {
                 intelligence.innerText = "";
+                machineVoice2Play();
                 typeWriter("Report: The troublemaker is NOT in the Central Areas, 2 shots");
             } else {
                 intelligence.innerText = "";
+                machineVoice2Play();
                 typeWriter("Report: The troublemaker is NOT in the Eastern Areas, 2 shots");
             }
         }
         if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
             if (guess == 1) {
                 intelligence.innerText = "";
+                machineVoice2Play();
                 typeWriter("Report: The troublemaker is NOT in the Western Areas, 2 shots");
             } else if (guess == 2) {
                 intelligence.innerText = "";
+                machineVoice2Play();
                 typeWriter("Report: The troublemaker is NOT in the Central Areas, 2 shots");
             } else {
                 intelligence.innerText = "";
+                machineVoice2Play();
                 typeWriter("Report: The troublemaker is NOT in the Western Areas, 2 shots");
             }
         }
         if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
             if (guess == 1) {
                 intelligence.innerText = "";
+                machineVoice2Play();
                 typeWriter("Report: The troublemaker is NOT in the Western Areas, 2 shots");
             } else if (guess == 2) {
                 intelligence.innerText = "";
+                machineVoice2Play();
                 typeWriter("Report: The troublemaker is NOT in the Eastern Areas, 2 shots");
             } else {
                 intelligence.innerText = "";
+                machineVoice2Play();
                 typeWriter("Report: The troublemaker is NOT in the Eastern Areas, 2 shots");
             }
         }
@@ -125,8 +142,9 @@ function openFire() {
     explosion.volume = 0.5;
 }
 function watchtowerSearch() {
+    machineVoice1Play();
+    typeWriter("Scour the area, fire 3 shots to find the troublemaker!");
     intel();
-
     hidingSpot[0].addEventListener("click", function () {
         openFire();
         intel();

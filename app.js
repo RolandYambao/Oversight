@@ -58,29 +58,29 @@ function intel() {
         intelligence.style.color = "orange";
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
             if (guess == 1) {
-                intelligence.innerText = "Report: The troublemaker is not in the Central Areas, 2 shots";
+                intelligence.innerText = "Report: The troublemaker is NOT in the Central Areas, 2 shots";
             } else if (guess == 2) {
-                intelligence.innerText = "Report: The troublemaker is not in the Central Areas, 2 shots";
+                intelligence.innerText = "Report: The troublemaker is NOT in the Central Areas, 2 shots";
             } else {
-                intelligence.innerText = "Report: The troublemaker is not in the Eastern Areas, 2 shots";
+                intelligence.innerText = "Report: The troublemaker is NOT in the Eastern Areas, 2 shots";
             }
         }
         if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
             if (guess == 1) {
-                intelligence.innerText = "Report: The troublemaker is not in the Western Areas, 2 shots";
+                intelligence.innerText = "Report: The troublemaker is NOT in the Western Areas, 2 shots";
             } else if (guess == 2) {
-                intelligence.innerText = "Report: The troublemaker is not in the Central Areas, 2 shots";
+                intelligence.innerText = "Report: The troublemaker is NOT in the Central Areas, 2 shots";
             } else {
-                intelligence.innerText = "Report: The troublemaker is not in the Western Areas, 2 shots";
+                intelligence.innerText = "Report: The troublemaker is NOT in the Western Areas, 2 shots";
             }
         }
         if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
             if (guess == 1) {
-                intelligence.innerText = "Report: The troublemaker is not in the Western Areas, 2 shots";
+                intelligence.innerText = "Report: The troublemaker is NOT in the Western Areas, 2 shots";
             } else if (guess == 2) {
-                intelligence.innerText = "Report: The troublemaker is not in the Eastern Areas, 2 shots";
+                intelligence.innerText = "Report: The troublemaker is NOT in the Eastern Areas, 2 shots";
             } else {
-                intelligence.innerText = "Report: The troublemaker is not in the Eastern Areas, 2 shots";
+                intelligence.innerText = "Report: The troublemaker is NOT in the Eastern Areas, 2 shots";
             }
         }
     }

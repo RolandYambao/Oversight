@@ -63,10 +63,14 @@ function sixTurns() {
         intelligence.addEventListener("click", function () {
             location.reload();
         })
+        for (let i = 0; i < 15; i++) {
+            hidingSpot[i].addEventListener("click", function () {
+                location.reload();
+            })
+        }
     }
 }
 function successfulMission() {
-    turns = 6;
     intelligence.innerText = "";
     openFire();
     music.setAttribute("src", "universalTriumph.mp3");
@@ -76,6 +80,11 @@ function successfulMission() {
     intelligence.addEventListener("click", function () {
         location.reload();
     })
+    for (let i = 0; i < 15; i++) {
+        hidingSpot[i].addEventListener("click", function () {
+            location.reload();
+        })
+    }
 }
 function failedMission() {
     turns++;
@@ -173,8 +182,6 @@ function watchtowerSearch() {
         hidingSpot[1].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[1].style.backgroundSize = "100% 100%";
         if (computerChoice == 2) {
-            turns = 6;
-            intelligence.innerText = "";
             hidingSpot[1].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[1].style.backgroundSize = "100% 100%";
             successfulMission();
@@ -188,8 +195,6 @@ function watchtowerSearch() {
         hidingSpot[2].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[2].style.backgroundSize = "100% 100%";
         if (computerChoice == 3) {
-            turns = 6;
-            intelligence.innerText = "";
             hidingSpot[2].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[2].style.backgroundSize = "100% 100%";
             successfulMission();
@@ -203,8 +208,6 @@ function watchtowerSearch() {
         hidingSpot[3].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[3].style.backgroundSize = "100% 100%";
         if (computerChoice == 4) {
-            turns = 6;
-            intelligence.innerText = "";
             hidingSpot[3].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[3].style.backgroundSize = "100% 100%";
             successfulMission();
@@ -218,8 +221,6 @@ function watchtowerSearch() {
         hidingSpot[4].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[4].style.backgroundSize = "100% 100%";
         if (computerChoice == 5) {
-            turns = 6;
-            intelligence.innerText = "";
             hidingSpot[4].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[4].style.backgroundSize = "100% 100%";
             successfulMission();
@@ -233,8 +234,6 @@ function watchtowerSearch() {
         hidingSpot[5].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[5].style.backgroundSize = "100% 100%";
         if (computerChoice == 6) {
-            turns = 6;
-            intelligence.innerText = "";
             hidingSpot[5].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[5].style.backgroundSize = "100% 100%";
             successfulMission();
@@ -248,8 +247,6 @@ function watchtowerSearch() {
         hidingSpot[6].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[6].style.backgroundSize = "100% 100%";
         if (computerChoice == 7) {
-            turns = 6;
-            intelligence.innerText = "";
             hidingSpot[6].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[6].style.backgroundSize = "100% 100%";
             successfulMission();
@@ -263,8 +260,6 @@ function watchtowerSearch() {
         hidingSpot[7].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[7].style.backgroundSize = "100% 100%";
         if (computerChoice == 8) {
-            turns = 6;
-            intelligence.innerText = "";
             hidingSpot[7].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[7].style.backgroundSize = "100% 100%";
             successfulMission();
@@ -278,8 +273,6 @@ function watchtowerSearch() {
         hidingSpot[8].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[8].style.backgroundSize = "100% 100%";
         if (computerChoice == 9) {
-            turns = 6;
-            intelligence.innerText = "";
             hidingSpot[8].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[8].style.backgroundSize = "100% 100%";
             successfulMission();
@@ -292,9 +285,7 @@ function watchtowerSearch() {
         openFire();
         hidingSpot[9].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[9].style.backgroundSize = "100% 100%";
-        if (computerChoice == 10) {
-            turns = 6;
-            intelligence.innerText = "";
+        if (computerChoice == 10) {;
             hidingSpot[9].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[9].style.backgroundSize = "100% 100%";
             successfulMission();
@@ -308,8 +299,6 @@ function watchtowerSearch() {
         hidingSpot[10].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[10].style.backgroundSize = "100% 100%";
         if (computerChoice == 11) {
-            turns = 6;
-            intelligence.innerText = "";
             hidingSpot[10].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[10].style.backgroundSize = "100% 100%";
             successfulMission();
@@ -323,8 +312,6 @@ function watchtowerSearch() {
         hidingSpot[11].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[11].style.backgroundSize = "100% 100%";
         if (computerChoice == 12) {
-            turns = 6;
-            intelligence.innerText = "";
             hidingSpot[11].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[11].style.backgroundSize = "100% 100%";
             successfulMission();
@@ -338,8 +325,6 @@ function watchtowerSearch() {
         hidingSpot[12].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[12].style.backgroundSize = "100% 100%";
         if (computerChoice == 13) {
-            turns = 6;
-            intelligence.innerText = "";
             hidingSpot[12].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[12].style.backgroundSize = "100% 100%";
             successfulMission();
@@ -353,8 +338,6 @@ function watchtowerSearch() {
         hidingSpot[13].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[13].style.backgroundSize = "100% 100%";
         if (computerChoice == 14) {
-            turns = 6;
-            intelligence.innerText = "";
             hidingSpot[13].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[13].style.backgroundSize = "100% 100%";
             successfulMission();
@@ -368,8 +351,6 @@ function watchtowerSearch() {
         hidingSpot[14].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[14].style.backgroundSize = "100% 100%";
         if (computerChoice == 15) {
-            turns = 6;
-            intelligence.innerText = "";
             hidingSpot[14].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[14].style.backgroundSize = "100% 100%";
             successfulMission();

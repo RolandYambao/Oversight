@@ -26,11 +26,11 @@ function machineVoice1Play() {
     machineVoice1.play();
     machineVoice1.volume = 0.5;
 }
-function machineVoice2Play () {
+function machineVoice2Play() {
     machineVoice2.play();
     machineVoice2.volume = 0.5;
 }
-function machineVoice3Play () {
+function machineVoice3Play() {
     machineVoice3.play();
     machineVoice3.volume = 0.5;
 }
@@ -42,7 +42,7 @@ function typeWriter(phrase) {
     for (let i = 0; i < phrase.length; i++) {
         setTimeout(function () {
             intelligence.innerHTML += phrase.charAt(i);
-        }, 25*i);
+        }, 25 * i);
     }
 }
 function sixTurns() {

@@ -1,3 +1,4 @@
+// Declaring all Main Variables
 let hidingSpot = document.getElementsByClassName("hidingSpot");
 let intelligence = document.getElementById("intelligence");
 let backgroundBanner = document.getElementById("watchTower");
@@ -22,7 +23,7 @@ machineVoice2.src = "mechanicusVoice2.mp3";
 const machineVoice3 = new Audio();
 machineVoice3.src = "mechanicusVoice3.mp3";
 
-
+// Functions for Sound Effects
 function machineVoice1Play() {
     machineVoice1.play();
     machineVoice1.volume = 0.5;
@@ -39,6 +40,8 @@ function openFire() {
     explosion.play();
     explosion.volume = 0.5;
 }
+
+// Function for the interesting Typing Effect for the Hints
 function typeWriter(phrase) {
     for (let i = 0; i < phrase.length; i++) {
         setTimeout(function () {
@@ -46,48 +49,14 @@ function typeWriter(phrase) {
         }, 25 * i);
     }
 }
-function failedMission() {
-    if (turns == 6) {
-        music.setAttribute("src", "defeatMusic.mp3");
-        music.volume = 0.5;
-        document.getElementById("title").innerHTML = "Oversight".strike();
-        document.getElementById("tower").innerHTML = "&#9760;";
-        backgroundBanner.style.backgroundImage = "url(fire.gif)";
-        backgroundBanner.style.backgroundSize = "100% 100%";
-        camera1.style.display = "none";
-        camera2.style.display = "none";
-        for (let i = 0; i < 15; i++) {
-            hidingSpot[i].style.borderColor = "red";
-        }
-        intelligence.innerText = "";
-        typeWriter("Mission Failed, we have been Destroyed, Click Here to Play Again");
-        for (let i = 0; i < 15; i++) {
-            hidingSpot[i].addEventListener("click", function () {
-                location.reload();
-            })
-        }
-    }
-}
-function successfulMission() {
-    intelligence.innerText = "";
-    openFire();
-    music.setAttribute("src", "universalTriumph.mp3");
-    music.volume = 0.1;
-    typeWriter("Mission Accomplished, Click Here to Play Again");
-    intelligence.style.color = "white";
-    intelligence.addEventListener("click", function () {
-        location.reload();
-    })
-    for (let i = 0; i < 15; i++) {
-        hidingSpot[i].addEventListener("click", function () {
-            location.reload();
-        })
-    }
-}
+
+// Function for the failure of one Attack
 function failedAttack() {
     turns++;
     failedMission();
 }
+
+// Function for the given hints to the player
 function intel() {
     if (turns == 2) {
         intelligence.style.color = "orange";
@@ -156,6 +125,49 @@ function intel() {
         }
     }
 }
+// Function for the Failure of the player
+function failedMission() {
+    if (turns == 6) {
+        music.setAttribute("src", "defeatMusic.mp3");
+        music.volume = 0.5;
+        document.getElementById("title").innerHTML = "Oversight".strike();
+        document.getElementById("tower").innerHTML = "&#9760;";
+        backgroundBanner.style.backgroundImage = "url(fire.gif)";
+        backgroundBanner.style.backgroundSize = "100% 100%";
+        camera1.style.display = "none";
+        camera2.style.display = "none";
+        for (let i = 0; i < 15; i++) {
+            hidingSpot[i].style.borderColor = "red";
+        }
+        intelligence.innerText = "";
+        typeWriter("Mission Failed, we have been Destroyed, Click Here to Play Again");
+        for (let i = 0; i < 15; i++) {
+            hidingSpot[i].addEventListener("click", function () {
+                location.reload();
+            })
+        }
+    }
+}
+
+// Function for the Success of the player
+function successfulMission() {
+    intelligence.innerText = "";
+    openFire();
+    music.setAttribute("src", "universalTriumph.mp3");
+    music.volume = 0.1;
+    typeWriter("Mission Accomplished, Click Here to Play Again");
+    intelligence.style.color = "white";
+    intelligence.addEventListener("click", function () {
+        location.reload();
+    })
+    for (let i = 0; i < 15; i++) {
+        hidingSpot[i].addEventListener("click", function () {
+            location.reload();
+        })
+    }
+}
+
+// Function for the initiation of the game
 function watchtowerSearch() {
     machineVoice1Play();
     typeWriter("Scour the area, fire 3 shots to find the troublemaker!");
@@ -163,7 +175,7 @@ function watchtowerSearch() {
     intelligence.addEventListener("click", function () {
         location.reload();
     })
-    
+
     hidingSpot[0].addEventListener("click", function () {
         openFire();
         hidingSpot[0].style.backgroundImage = "url(destroyedBuilding.jpg)";
@@ -361,4 +373,5 @@ function watchtowerSearch() {
         }
     })
 }
+// Game Initiation
 watchtowerSearch();

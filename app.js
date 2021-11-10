@@ -61,11 +61,11 @@ function sixTurns() {
     }
 }
 function successfulMission() {
+    intelligence.innerText = "";
     turns = 6;
     openFire();
     music.setAttribute("src", "universalTriumph.mp3");
     music.volume = 0.1;
-    intelligence.innerText = "";
     typeWriter("Mission Accomplished, Click Here to Play Again");
     intelligence.style.color = "white";
     intelligence.addEventListener("click", function () {

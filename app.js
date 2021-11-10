@@ -6,10 +6,13 @@ let camera2 = document.getElementById("camera2");
 let computerChoice = Math.floor(Math.random() * 15 + 1);
 let guess = Math.floor(Math.random() * 3 + 1);
 let turns = 0;
+console.log(computerChoice);
+
 let music = document.querySelector("#music");
+music.volume = 0.2;
+
 const explosion = new Audio();
 explosion.src = "explosion.mp3";
-console.log(computerChoice);
 
 const machineVoice1 = new Audio();
 machineVoice1.src = "mechanicusVoice1.mp3";
@@ -20,7 +23,6 @@ machineVoice2.src = "mechanicusVoice2.mp3";
 const machineVoice3 = new Audio();
 machineVoice3.src = "mechanicusVoice3.mp3";
 
-music.volume = 0.2;
 
 function machineVoice1Play() {
     machineVoice1.play();
@@ -91,9 +93,6 @@ function failedMission() {
     sixTurns();
 }
 function intel() {
-    if (turns >= 6) {
-        location.reload();
-    }
     if (turns == 2) {
         intelligence.style.color = "orange";
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
@@ -285,7 +284,8 @@ function watchtowerSearch() {
         openFire();
         hidingSpot[9].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[9].style.backgroundSize = "100% 100%";
-        if (computerChoice == 10) {;
+        if (computerChoice == 10) {
+            ;
             hidingSpot[9].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[9].style.backgroundSize = "100% 100%";
             successfulMission();

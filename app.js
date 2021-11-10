@@ -6,11 +6,18 @@ let camera2 = document.getElementById("camera2");
 let computerChoice = Math.floor(Math.random() * 15 + 1);
 let guess = Math.floor(Math.random() * 3 + 1);
 let turns = 0;
+let typeSpeed = 50;
 let music = document.querySelector("#music");
 const explosion = new Audio();
 explosion.src = "explosion.mp3";
 music.volume = 0.5;
 
+function typeWriter(phrase) {
+    for (let i = 0; i < phrase.length; i++) {
+        intelligence.innerHTML += phrase.charAt(i);
+        setTimeout(typeWriter, typeSpeed);
+    }
+}
 function sixTurns() {
     if (turns == 6) {
         music.setAttribute("src", "defeatMusic.mp3");
@@ -25,7 +32,8 @@ function sixTurns() {
         for (let i = 0; i < 15; i++) {
             hidingSpot[i].style.borderColor = "red";
         }
-        intelligence.innerText = "Mission Failed, we have been Destroyed, Click Here to Play Again";
+        intelligence.innerText = "";
+        typeWriter("Mission Failed, we have been Destroyed, Click Here to Play Again");
         intelligence.addEventListener("click", function () {
             location.reload();
         })
@@ -37,7 +45,8 @@ function successfulMission() {
     music.setAttribute("src", "universalTriumph.mp3");
     music.volume = 0.1;
     alert("Mission Accomplished, target eliminated in Area " + computerChoice);
-    intelligence.innerText = "Mission Accomplished, Click Here to Play Again";
+    intelligence.innerText = "";
+    typeWriter("Mission Accomplished, Click Here to Play Again");
     intelligence.style.color = "white";
     intelligence.addEventListener("click", function () {
         location.reload();
@@ -52,49 +61,62 @@ function intel() {
     if (turns >= 6) {
         location.reload();
     }
-    if (turns < 1) {
-        intelligence.innerText = "Scour the area, fire 3 shots to find the troublemaker!";
+    if (turns == 0) {
+        intelligence.innerText = "";
+        typeWriter("Scour the area, fire 3 shots to find the troublemaker!");
     }
-    if (turns > 1 && turns < 4) {
+    if (turns == 2) {
         intelligence.style.color = "orange";
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
             if (guess == 1) {
-                intelligence.innerText = "Report: The troublemaker is NOT in the Central Areas, 2 shots";
+                intelligence.innerText = "";
+                typeWriter("Report: The troublemaker is NOT in the Central Areas, 2 shots");
             } else if (guess == 2) {
-                intelligence.innerText = "Report: The troublemaker is NOT in the Central Areas, 2 shots";
+                intelligence.innerText = "";
+                typeWriter("Report: The troublemaker is NOT in the Central Areas, 2 shots");
             } else {
-                intelligence.innerText = "Report: The troublemaker is NOT in the Eastern Areas, 2 shots";
+                intelligence.innerText = "";
+                typeWriter("Report: The troublemaker is NOT in the Eastern Areas, 2 shots");
             }
         }
         if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
             if (guess == 1) {
-                intelligence.innerText = "Report: The troublemaker is NOT in the Western Areas, 2 shots";
+                intelligence.innerText = "";
+                typeWriter("Report: The troublemaker is NOT in the Western Areas, 2 shots");
             } else if (guess == 2) {
-                intelligence.innerText = "Report: The troublemaker is NOT in the Central Areas, 2 shots";
+                intelligence.innerText = "";
+                typeWriter("Report: The troublemaker is NOT in the Central Areas, 2 shots");
             } else {
-                intelligence.innerText = "Report: The troublemaker is NOT in the Western Areas, 2 shots";
+                intelligence.innerText = "";
+                typeWriter("Report: The troublemaker is NOT in the Western Areas, 2 shots");
             }
         }
         if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
             if (guess == 1) {
-                intelligence.innerText = "Report: The troublemaker is NOT in the Western Areas, 2 shots";
+                intelligence.innerText = "";
+                typeWriter("Report: The troublemaker is NOT in the Western Areas, 2 shots");
             } else if (guess == 2) {
-                intelligence.innerText = "Report: The troublemaker is NOT in the Eastern Areas, 2 shots";
+                intelligence.innerText = "";
+                typeWriter("Report: The troublemaker is NOT in the Eastern Areas, 2 shots");
             } else {
-                intelligence.innerText = "Report: The troublemaker is NOT in the Eastern Areas, 2 shots";
+                intelligence.innerText = "";
+                typeWriter("Report: The troublemaker is NOT in the Eastern Areas, 2 shots");
             }
         }
     }
-    if (turns >= 4) {
+    if (turns == 4) {
         intelligence.style.color = "red";
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
-            intelligence.innerText = "Intelligence: Movement discovered in the Western areas, 1 last shot";
+            intelligence.innerText = "";
+            typeWriter("Intelligence: Movement discovered in the Western areas, 1 last shot");
         }
         if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
-            intelligence.innerText = "Intelligence: Sensors pick up noises in the Eastern areas, 1 last shot";
+            intelligence.innerText = "";
+            typeWriter("Intelligence: Sensors pick up noises in the Eastern areas, 1 last shot");
         }
         if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
-            intelligence.innerText = "Intelligence: Rumors of a figure in the Central areas, 1 last shot";
+            intelligence.innerText = "";
+            typeWriter("Intelligence: Rumors of a figure in the Central areas, 1 last shot");
         }
     }
 }

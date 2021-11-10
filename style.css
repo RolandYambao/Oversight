@@ -43,7 +43,7 @@ h1 {
     color: white;
     background-image: url("ruinedCity.jpg");
     background-size: 100% 100%;
-    block-size: 625px;
+    block-size: 525px;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 33.5% 33.5% 33.5% 33.5% 33.5%;

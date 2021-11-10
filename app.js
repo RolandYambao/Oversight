@@ -9,12 +9,12 @@ let turns = 0;
 let music = document.querySelector("#music");
 const explosion = new Audio();
 explosion.src = "explosion.mp3";
-music.volume = 0.1;
+music.volume = 0.5;
 
 function sixTurns() {
     if (turns == 6) {
         music.setAttribute("src", "defeatMusic.mp3");
-        music.volume = 0.1;
+        music.volume = 0.5;
         alert("Mission Failed, the Troublemaker was in Area " + computerChoice);
         document.getElementById("title").innerHTML = "Oversight".strike();
         document.getElementById("tower").innerHTML = "&#9760;";

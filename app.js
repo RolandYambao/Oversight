@@ -16,6 +16,9 @@ machineVoice1.src = "mechanicusVoice1.mp3";
 const machineVoice2 = new Audio();
 machineVoice2.src = "mechanicusVoice2.mp3";
 
+const machineVoice3 = new Audio();
+machineVoice3.src = "mechanicusVoice3.mp3";
+
 music.volume = 0.2;
 
 function machineVoice1Play() {
@@ -25,6 +28,10 @@ function machineVoice1Play() {
 function machineVoice2Play () {
     machineVoice2.play();
     machineVoice2.volume = 0.5;
+}
+function machineVoice3Play () {
+    machineVoice3.play();
+    machineVoice3.volume = 0.5;
 }
 function typeWriter(phrase) {
     for (let i = 0; i < phrase.length; i++) {
@@ -125,14 +132,17 @@ function intel() {
         intelligence.style.color = "red";
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
             intelligence.innerText = "";
+            machineVoice3Play();
             typeWriter("Intelligence: Movement discovered in the Western areas, 1 last shot");
         }
         if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
             intelligence.innerText = "";
+            machineVoice3Play();
             typeWriter("Intelligence: Sensors pick up noises in the Eastern areas, 1 last shot");
         }
         if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
             intelligence.innerText = "";
+            machineVoice3Play();
             typeWriter("Intelligence: Rumors of a figure in the Central areas, 1 last shot");
         }
     }

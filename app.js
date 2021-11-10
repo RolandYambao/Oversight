@@ -163,6 +163,7 @@ function watchtowerSearch() {
     intelligence.addEventListener("click", function () {
         location.reload();
     })
+    
     hidingSpot[0].addEventListener("click", function () {
         openFire();
         hidingSpot[0].style.backgroundImage = "url(destroyedBuilding.jpg)";

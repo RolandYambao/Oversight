@@ -61,9 +61,6 @@ function failedMission() {
         }
         intelligence.innerText = "";
         typeWriter("Mission Failed, we have been Destroyed, Click Here to Play Again");
-        intelligence.addEventListener("click", function () {
-            location.reload();
-        })
         for (let i = 0; i < 15; i++) {
             hidingSpot[i].addEventListener("click", function () {
                 location.reload();
@@ -162,6 +159,10 @@ function intel() {
 function watchtowerSearch() {
     machineVoice1Play();
     typeWriter("Scour the area, fire 3 shots to find the troublemaker!");
+
+    intelligence.addEventListener("click", function () {
+        location.reload();
+    })
     hidingSpot[0].addEventListener("click", function () {
         openFire();
         hidingSpot[0].style.backgroundImage = "url(destroyedBuilding.jpg)";

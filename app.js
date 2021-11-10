@@ -38,6 +38,7 @@ function successfulMission() {
     music.volume = 0.1;
     alert("Mission Accomplished, target eliminated in Area " + computerChoice);
     intelligence.innerText = "Mission Accomplished, Click Here to Play Again";
+    intelligence.style.color = "white";
     intelligence.addEventListener("click", function () {
         location.reload();
     })

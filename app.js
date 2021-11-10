@@ -9,6 +9,7 @@ let turns = 0;
 let music = document.querySelector("#music");
 const explosion = new Audio();
 explosion.src = "explosion.mp3";
+console.log(computerChoice);
 
 const machineVoice1 = new Audio();
 machineVoice1.src = "mechanicusVoice1.mp3";
@@ -32,6 +33,10 @@ function machineVoice2Play () {
 function machineVoice3Play () {
     machineVoice3.play();
     machineVoice3.volume = 0.5;
+}
+function openFire() {
+    explosion.play();
+    explosion.volume = 0.5;
 }
 function typeWriter(phrase) {
     for (let i = 0; i < phrase.length; i++) {
@@ -61,8 +66,8 @@ function sixTurns() {
     }
 }
 function successfulMission() {
-    intelligence.innerText = "";
     turns = 6;
+    intelligence.innerText = "";
     openFire();
     music.setAttribute("src", "universalTriumph.mp3");
     music.volume = 0.1;
@@ -147,17 +152,11 @@ function intel() {
         }
     }
 }
-function openFire() {
-    explosion.play();
-    explosion.volume = 0.5;
-}
 function watchtowerSearch() {
     machineVoice1Play();
     typeWriter("Scour the area, fire 3 shots to find the troublemaker!");
-    intel();
     hidingSpot[0].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[0].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[0].style.backgroundSize = "100% 100%";
         if (computerChoice == 1) {
@@ -165,188 +164,217 @@ function watchtowerSearch() {
             hidingSpot[0].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })
     hidingSpot[1].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[1].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[1].style.backgroundSize = "100% 100%";
         if (computerChoice == 2) {
+            turns = 6;
+            intelligence.innerText = "";
             hidingSpot[1].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[1].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })
     hidingSpot[2].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[2].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[2].style.backgroundSize = "100% 100%";
         if (computerChoice == 3) {
+            turns = 6;
+            intelligence.innerText = "";
             hidingSpot[2].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[2].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })
     hidingSpot[3].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[3].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[3].style.backgroundSize = "100% 100%";
         if (computerChoice == 4) {
+            turns = 6;
+            intelligence.innerText = "";
             hidingSpot[3].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[3].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })
     hidingSpot[4].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[4].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[4].style.backgroundSize = "100% 100%";
         if (computerChoice == 5) {
+            turns = 6;
+            intelligence.innerText = "";
             hidingSpot[4].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[4].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })
     hidingSpot[5].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[5].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[5].style.backgroundSize = "100% 100%";
         if (computerChoice == 6) {
+            turns = 6;
+            intelligence.innerText = "";
             hidingSpot[5].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[5].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })
     hidingSpot[6].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[6].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[6].style.backgroundSize = "100% 100%";
         if (computerChoice == 7) {
+            turns = 6;
+            intelligence.innerText = "";
             hidingSpot[6].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[6].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })
     hidingSpot[7].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[7].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[7].style.backgroundSize = "100% 100%";
         if (computerChoice == 8) {
+            turns = 6;
+            intelligence.innerText = "";
             hidingSpot[7].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[7].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })
     hidingSpot[8].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[8].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[8].style.backgroundSize = "100% 100%";
         if (computerChoice == 9) {
+            turns = 6;
+            intelligence.innerText = "";
             hidingSpot[8].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[8].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })
     hidingSpot[9].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[9].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[9].style.backgroundSize = "100% 100%";
         if (computerChoice == 10) {
+            turns = 6;
+            intelligence.innerText = "";
             hidingSpot[9].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[9].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })
     hidingSpot[10].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[10].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[10].style.backgroundSize = "100% 100%";
         if (computerChoice == 11) {
+            turns = 6;
+            intelligence.innerText = "";
             hidingSpot[10].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[10].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })
     hidingSpot[11].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[11].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[11].style.backgroundSize = "100% 100%";
         if (computerChoice == 12) {
+            turns = 6;
+            intelligence.innerText = "";
             hidingSpot[11].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[11].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })
     hidingSpot[12].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[12].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[12].style.backgroundSize = "100% 100%";
         if (computerChoice == 13) {
+            turns = 6;
+            intelligence.innerText = "";
             hidingSpot[12].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[12].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })
     hidingSpot[13].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[13].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[13].style.backgroundSize = "100% 100%";
         if (computerChoice == 14) {
+            turns = 6;
+            intelligence.innerText = "";
             hidingSpot[13].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[13].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })
     hidingSpot[14].addEventListener("click", function () {
         openFire();
-        intel();
         hidingSpot[14].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[14].style.backgroundSize = "100% 100%";
         if (computerChoice == 15) {
+            turns = 6;
+            intelligence.innerText = "";
             hidingSpot[14].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[14].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
+            intel();
             failedMission();
         }
     })

@@ -109,7 +109,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[0].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[0].style.backgroundSize = "100% 100%";
-        console.log("Area 1 has been Searched");
         if (computerChoice == 1) {
             hidingSpot[0].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[0].style.backgroundSize = "100% 100%";
@@ -123,7 +122,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[1].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[1].style.backgroundSize = "100% 100%";
-        console.log("Area 2 has been Searched");
         if (computerChoice == 2) {
             hidingSpot[1].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[1].style.backgroundSize = "100% 100%";
@@ -137,7 +135,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[2].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[2].style.backgroundSize = "100% 100%";
-        console.log("Area 3 has been Searched");
         if (computerChoice == 3) {
             hidingSpot[2].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[2].style.backgroundSize = "100% 100%";
@@ -151,7 +148,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[3].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[3].style.backgroundSize = "100% 100%";
-        console.log("Area 4 has been Searched");
         if (computerChoice == 4) {
             hidingSpot[3].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[3].style.backgroundSize = "100% 100%";
@@ -165,7 +161,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[4].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[4].style.backgroundSize = "100% 100%";
-        console.log("Area 5 has been Searched");
         if (computerChoice == 5) {
             hidingSpot[4].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[4].style.backgroundSize = "100% 100%";
@@ -179,7 +174,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[5].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[5].style.backgroundSize = "100% 100%";
-        console.log("Area 6 has been Searched");
         if (computerChoice == 6) {
             hidingSpot[5].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[5].style.backgroundSize = "100% 100%";
@@ -193,7 +187,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[6].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[6].style.backgroundSize = "100% 100%";
-        console.log("Area 7 has been Searched");
         if (computerChoice == 7) {
             hidingSpot[6].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[6].style.backgroundSize = "100% 100%";
@@ -207,7 +200,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[7].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[7].style.backgroundSize = "100% 100%";
-        console.log("Area 8 has been Searched");
         if (computerChoice == 8) {
             hidingSpot[7].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[7].style.backgroundSize = "100% 100%";
@@ -221,7 +213,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[8].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[8].style.backgroundSize = "100% 100%";
-        console.log("Area 9 has been Searched");
         if (computerChoice == 9) {
             hidingSpot[8].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[8].style.backgroundSize = "100% 100%";
@@ -235,7 +226,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[9].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[9].style.backgroundSize = "100% 100%";
-        console.log("Area 10 has been Searched");
         if (computerChoice == 10) {
             hidingSpot[9].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[9].style.backgroundSize = "100% 100%";
@@ -249,7 +239,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[10].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[10].style.backgroundSize = "100% 100%";
-        console.log("Area 11 has been Searched");
         if (computerChoice == 11) {
             hidingSpot[10].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[10].style.backgroundSize = "100% 100%";
@@ -263,7 +252,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[11].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[11].style.backgroundSize = "100% 100%";
-        console.log("Area 12 has been Searched");
         if (computerChoice == 12) {
             hidingSpot[11].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[11].style.backgroundSize = "100% 100%";
@@ -277,7 +265,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[12].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[12].style.backgroundSize = "100% 100%";
-        console.log("Area 13 has been Searched");
         if (computerChoice == 13) {
             hidingSpot[12].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[12].style.backgroundSize = "100% 100%";
@@ -291,7 +278,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[13].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[13].style.backgroundSize = "100% 100%";
-        console.log("Area 14 has been Searched");
         if (computerChoice == 14) {
             hidingSpot[13].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[13].style.backgroundSize = "100% 100%";
@@ -305,7 +291,6 @@ function watchtowerSearch() {
         intel();
         hidingSpot[14].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[14].style.backgroundSize = "100% 100%";
-        console.log("Area 15 has been Searched");
         if (computerChoice == 15) {
             hidingSpot[14].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[14].style.backgroundSize = "100% 100%";

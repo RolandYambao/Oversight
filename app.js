@@ -6,7 +6,6 @@ let camera2 = document.getElementById("camera2");
 let computerChoice = Math.floor(Math.random() * 15 + 1);
 let guess = Math.floor(Math.random() * 3 + 1);
 let turns = 0;
-console.log(computerChoice);
 
 let music = document.querySelector("#music");
 music.volume = 0.2;
@@ -47,7 +46,7 @@ function typeWriter(phrase) {
         }, 25 * i);
     }
 }
-function sixTurns() {
+function failedMission() {
     if (turns == 6) {
         music.setAttribute("src", "defeatMusic.mp3");
         music.volume = 0.5;
@@ -88,9 +87,9 @@ function successfulMission() {
         })
     }
 }
-function failedMission() {
+function failedAttack() {
     turns++;
-    sixTurns();
+    failedMission();
 }
 function intel() {
     if (turns == 2) {
@@ -173,7 +172,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
     hidingSpot[1].addEventListener("click", function () {
@@ -186,7 +185,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
     hidingSpot[2].addEventListener("click", function () {
@@ -199,7 +198,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
     hidingSpot[3].addEventListener("click", function () {
@@ -212,7 +211,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
     hidingSpot[4].addEventListener("click", function () {
@@ -225,7 +224,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
     hidingSpot[5].addEventListener("click", function () {
@@ -238,7 +237,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
     hidingSpot[6].addEventListener("click", function () {
@@ -251,7 +250,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
     hidingSpot[7].addEventListener("click", function () {
@@ -264,7 +263,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
     hidingSpot[8].addEventListener("click", function () {
@@ -277,7 +276,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
     hidingSpot[9].addEventListener("click", function () {
@@ -291,7 +290,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
     hidingSpot[10].addEventListener("click", function () {
@@ -304,7 +303,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
     hidingSpot[11].addEventListener("click", function () {
@@ -317,7 +316,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
     hidingSpot[12].addEventListener("click", function () {
@@ -330,7 +329,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
     hidingSpot[13].addEventListener("click", function () {
@@ -343,7 +342,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
     hidingSpot[14].addEventListener("click", function () {
@@ -356,7 +355,7 @@ function watchtowerSearch() {
             successfulMission();
         } else {
             intel();
-            failedMission();
+            failedAttack();
         }
     })
 }

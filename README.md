@@ -49,6 +49,6 @@ function failedMission() {
 3. Warhammer 40,000: Mechanicus (2020) - Machine Voices
 4. Cisco Eng-emojis from Giphy - Security Camera gif
 5. WallpaperAccess - Ruined City Background
-6. Connor Evans from Pinterest - Destroyed Building Image
+6. Marco Di Lauro on Getty Images - Destroyed Building Image
 7. Acegif - Fire Background on Defeat Screen
 8. Adobe Stock - Red Crosshair Image

@@ -1,14 +1,23 @@
 // Declaring all Main Variables
-let hidingSpot = document.getElementsByClassName("hidingSpot");
-let intelligence = document.getElementById("intelligence");
-let backgroundBanner = document.getElementById("watchTower");
-let camera1 = document.getElementById("camera1");
-let camera2 = document.getElementById("camera2");
-let computerChoice = Math.floor(Math.random() * 15 + 1);
-let guess = Math.floor(Math.random() * 3 + 1);
+const hidingSpot = document.getElementsByClassName("hidingSpot");
+const intelligence = document.getElementById("intelligence");
+const backgroundBanner = document.getElementById("watchTower");
+const camera1 = document.getElementById("camera1");
+const camera2 = document.getElementById("camera2");
+const computerChoice = Math.floor(Math.random() * 15 + 1);
+const guess = Math.floor(Math.random() * 3 + 1);
 let turns = 0;
+const scour = "Scour the area, fire 3 shots to find the troublemaker!";
+const notWestern = "Report: The troublemaker is NOT in the Western Areas, 2 shots";
+const notCenter = "Report: The troublemaker is NOT in the Central Areas, 2 shots";
+const notEastern = "Report: The troublemaker is NOT in the Eastern Areas, 2 shots";
+const lastWestern = "Intelligence: Movement discovered in the Western areas, 1 last shot";
+const lastCenter = "Intelligence: Rumors of a figure in the Central areas, 1 last shot";
+const lastEastern = "Intelligence: Sensors pick up noises in the Eastern areas, 1 last shot";
+const victory = "Mission Accomplished, Click Here to Play Again";
+const defeat = "Mission Failed, we have been Destroyed, Click Here to Play Again";
 
-let music = document.querySelector("#music");
+const music = document.querySelector("#music");
 music.volume = 0.2;
 
 const explosion = new Audio();
@@ -62,6 +71,12 @@ function typeWriter(phrase) {
             intelligence.innerHTML += phrase.charAt(i);
         }, 25 * i);
     }
+}
+
+// Function for the stopping of the Typing Effect for the Hints
+function stopWriter(phrase) {
+    clearTimeout(phrase);
+    intelligence.innerText = "";
 }
 
 // Function for the failure of one Attack
@@ -161,99 +176,100 @@ function intel() {
         intelligence.style.color = "orange";
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
             if (guess == 1) {
-                intelligence.innerText = "";
+                stopWriter();
                 machineVoice2Play();
                 highlightWest();
                 highlightEast();
-                typeWriter("Report: The troublemaker is NOT in the Central Areas, 2 shots");
+                typeWriter(notCenter);
             } else if (guess == 2) {
-                intelligence.innerText = "";
+                stopWriter();
                 machineVoice2Play();
                 highlightWest();
                 highlightEast();
-                typeWriter("Report: The troublemaker is NOT in the Central Areas, 2 shots");
+                typeWriter(notCenter);
             } else {
-                intelligence.innerText = "";
+                stopWriter();
                 machineVoice2Play();
                 highlightWest();
                 highlightCenter();
-                typeWriter("Report: The troublemaker is NOT in the Eastern Areas, 2 shots");
+                typeWriter(notEastern);
             }
         }
         if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
             if (guess == 1) {
-                intelligence.innerText = "";
+                stopWriter();
                 machineVoice2Play();
                 highlightCenter();
                 highlightEast();
-                typeWriter("Report: The troublemaker is NOT in the Western Areas, 2 shots");
+                typeWriter(notWestern);
             } else if (guess == 2) {
-                intelligence.innerText = "";
+                stopWriter();
                 machineVoice2Play();
                 highlightWest();
                 highlightEast();
-                typeWriter("Report: The troublemaker is NOT in the Central Areas, 2 shots");
+                typeWriter(notCenter);
             } else {
-                intelligence.innerText = "";
+                stopWriter();
                 machineVoice2Play();
                 highlightCenter();
                 highlightEast();
-                typeWriter("Report: The troublemaker is NOT in the Western Areas, 2 shots");
+                typeWriter(notWestern);
             }
         }
         if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
             if (guess == 1) {
-                intelligence.innerText = "";
+                stopWriter();
                 machineVoice2Play();
                 highlightCenter();
                 highlightEast();
-                typeWriter("Report: The troublemaker is NOT in the Western Areas, 2 shots");
+                typeWriter(notWestern);
             } else if (guess == 2) {
-                intelligence.innerText = "";
+                stopWriter();
                 machineVoice2Play();
                 highlightWest();
                 highlightCenter();
-                typeWriter("Report: The troublemaker is NOT in the Eastern Areas, 2 shots");
+                typeWriter(notEastern);
             } else {
-                intelligence.innerText = "";
+                stopWriter();
                 machineVoice2Play();
                 highlightWest();
                 highlightCenter();
-                typeWriter("Report: The troublemaker is NOT in the Eastern Areas, 2 shots");
+                typeWriter(notEastern);
             }
         }
     }
     if (turns == 4) {
         intelligence.style.color = "red";
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
-            intelligence.innerText = "";
+            stopWriter();
             machineVoice3Play();
             highlightWest();
             darkenCenter();
             darkenEast();
-            typeWriter("Intelligence: Movement discovered in the Western areas, 1 last shot");
+            typeWriter(lastWestern);
         }
         if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
-            intelligence.innerText = "";
+            stopWriter();
             machineVoice3Play();
             highlightEast();
             darkenWest();
             darkenCenter();
-            typeWriter("Intelligence: Sensors pick up noises in the Eastern areas, 1 last shot");
+            typeWriter(lastEastern);
         }
         if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
-            intelligence.innerText = "";
+            stopWriter();
             machineVoice3Play();
             highlightCenter();
             darkenWest();
             darkenEast();
-            typeWriter("Intelligence: Rumors of a figure in the Central areas, 1 last shot");
+            typeWriter(lastCenter);
         }
     }
 }
 // Function for the Failure of the player
 function failedMission() {
     if (turns == 6) {
+        stopWriter();
         music.setAttribute("src", "defeatMusic.mp3");
         music.volume = 0.5;
         document.getElementById("title").innerHTML = "Oversight".strike();
@@ -265,9 +281,8 @@ function failedMission() {
         highlightWest();
         highlightCenter();
         highlightEast();
-        intelligence.innerText = "";
         machineVoice4Play();
-        typeWriter("Mission Failed, we have been Destroyed, Click Here to Play Again");
+        typeWriter(defeat);
         for (let i = 0; i < 15; i++) {
             hidingSpot[i].addEventListener("click", function () {
                 location.reload();
@@ -278,12 +293,12 @@ function failedMission() {
 
 // Function for the Success of the player
 function successfulMission() {
-    intelligence.innerText = "";
+    stopWriter();
     openFire();
     music.setAttribute("src", "theInnerPartySpeaker.mp3");
     music.volume = 0.1;
     machineVoice5Play();
-    typeWriter("Mission Accomplished, Click Here to Play Again");
+    typeWriter(victory);
     intelligence.style.color = "white";
     darkenWest();
     darkenCenter();
@@ -301,7 +316,7 @@ function successfulMission() {
 // Function for the initiation of the game
 function watchtowerSearch() {
     machineVoice1Play();
-    typeWriter("Scour the area, fire 3 shots to find the troublemaker!");
+    typeWriter(scour);
 
     intelligence.addEventListener("click", function () {
         location.reload();

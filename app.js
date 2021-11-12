@@ -262,9 +262,9 @@ function failedMission() {
         backgroundBanner.style.backgroundSize = "100% 100%";
         camera1.style.display = "none";
         camera2.style.display = "none";
-        for (let i = 0; i < 15; i++) {
-            hidingSpot[i].style.borderColor = "red";
-        }
+        highlightWest();
+        highlightCenter();
+        highlightEast();
         intelligence.innerText = "";
         machineVoice4Play();
         typeWriter("Mission Failed, we have been Destroyed, Click Here to Play Again");
@@ -285,6 +285,9 @@ function successfulMission() {
     machineVoice5Play();
     typeWriter("Mission Accomplished, Click Here to Play Again");
     intelligence.style.color = "white";
+    darkenWest();
+    darkenCenter();
+    darkenEast();
     intelligence.addEventListener("click", function () {
         location.reload();
     })

@@ -73,6 +73,15 @@ function typeWriter(phrase) {
     }
 }
 
+// Function to stop all typing
+function stopTyping() {
+    let highestTimeout = setTimeout(";");
+    for (let i = 0; i < highestTimeout; i++) {
+        clearTimeout(i);
+    }
+    intelligence.innerText = "";
+}
+
 // Function for the failure of one Attack
 function failedAttack() {
     turns++;
@@ -170,20 +179,20 @@ function intel() {
         intelligence.style.color = "orange";
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
             if (guess == 1) {
-                intelligence.innerText = "";
+                stopTyping();
                 machineVoice2Play();
                 highlightWest();
                 highlightEast();
                 typeWriter(notCenter);
             } else if (guess == 2) {
-                intelligence.innerText = "";
+                stopTyping();
                 machineVoice2Play();
                 highlightWest();
                 highlightEast();
                 typeWriter(notCenter);
 
             } else {
-                intelligence.innerText = "";
+                stopTyping();
                 machineVoice2Play();
                 highlightWest();
                 highlightCenter();
@@ -192,19 +201,19 @@ function intel() {
         }
         if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
             if (guess == 1) {
-                intelligence.innerText = "";
+                stopTyping();
                 machineVoice2Play();
                 highlightCenter();
                 highlightEast();
                 typeWriter(notWestern);
             } else if (guess == 2) {
-                intelligence.innerText = "";
+                stopTyping();
                 machineVoice2Play();
                 highlightWest();
                 highlightEast();
                 typeWriter(notCenter);
             } else {
-                intelligence.innerText = "";
+                stopTyping();
                 machineVoice2Play();
                 highlightCenter();
                 highlightEast();
@@ -213,19 +222,19 @@ function intel() {
         }
         if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
             if (guess == 1) {
-                intelligence.innerText = "";
+                stopTyping();
                 machineVoice2Play();
                 highlightCenter();
                 highlightEast();
                 typeWriter(notWestern);
             } else if (guess == 2) {
-                intelligence.innerText = "";
+                stopTyping();
                 machineVoice2Play();
                 highlightWest();
                 highlightCenter();
                 typeWriter(notEastern);
             } else {
-                intelligence.innerText = "";
+                stopTyping();
                 machineVoice2Play();
                 highlightWest();
                 highlightCenter();
@@ -236,7 +245,7 @@ function intel() {
     if (turns == 4) {
         intelligence.style.color = "red";
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
-            intelligence.innerText = "";
+            stopTyping();
             machineVoice3Play();
             highlightWest();
             darkenCenter();
@@ -244,7 +253,7 @@ function intel() {
             typeWriter(lastWestern);
         }
         if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
-            intelligence.innerText = "";
+            stopTyping();
             machineVoice3Play();
             highlightEast();
             darkenWest();
@@ -252,7 +261,7 @@ function intel() {
             typeWriter(lastEastern);
         }
         if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
-            intelligence.innerText = "";
+            stopTyping();
             machineVoice3Play();
             highlightCenter();
             darkenWest();
@@ -264,7 +273,7 @@ function intel() {
 // Function for the Failure of the player
 function failedMission() {
     if (turns == 6) {
-        intelligence.innerText = "";
+        stopTyping();
         music.setAttribute("src", "defeatMusic.mp3");
         music.volume = 0.5;
         document.getElementById("title").innerHTML = "Oversight".strike();
@@ -288,7 +297,7 @@ function failedMission() {
 
 // Function for the Success of the player
 function successfulMission() {
-    intelligence.innerText = "";
+    stopTyping();
     openFire();
     music.setAttribute("src", "theInnerPartySpeaker.mp3");
     music.volume = 0.1;

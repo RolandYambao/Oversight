@@ -334,7 +334,7 @@ function watchtowerSearch() {
         hidingSpot[0].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[0].style.backgroundSize = "100% 100%";
         if (computerChoice == 1) {
-            hidingSpot[0].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[0].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[0].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
@@ -348,7 +348,7 @@ function watchtowerSearch() {
         hidingSpot[1].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[1].style.backgroundSize = "100% 100%";
         if (computerChoice == 2) {
-            hidingSpot[1].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[1].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[1].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
@@ -362,7 +362,7 @@ function watchtowerSearch() {
         hidingSpot[2].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[2].style.backgroundSize = "100% 100%";
         if (computerChoice == 3) {
-            hidingSpot[2].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[2].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[2].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
@@ -376,7 +376,7 @@ function watchtowerSearch() {
         hidingSpot[3].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[3].style.backgroundSize = "100% 100%";
         if (computerChoice == 4) {
-            hidingSpot[3].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[3].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[3].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
@@ -390,7 +390,7 @@ function watchtowerSearch() {
         hidingSpot[4].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[4].style.backgroundSize = "100% 100%";
         if (computerChoice == 5) {
-            hidingSpot[4].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[4].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[4].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
@@ -404,7 +404,7 @@ function watchtowerSearch() {
         hidingSpot[5].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[5].style.backgroundSize = "100% 100%";
         if (computerChoice == 6) {
-            hidingSpot[5].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[5].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[5].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
@@ -418,7 +418,7 @@ function watchtowerSearch() {
         hidingSpot[6].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[6].style.backgroundSize = "100% 100%";
         if (computerChoice == 7) {
-            hidingSpot[6].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[6].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[6].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
@@ -432,7 +432,7 @@ function watchtowerSearch() {
         hidingSpot[7].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[7].style.backgroundSize = "100% 100%";
         if (computerChoice == 8) {
-            hidingSpot[7].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[7].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[7].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
@@ -446,7 +446,7 @@ function watchtowerSearch() {
         hidingSpot[8].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[8].style.backgroundSize = "100% 100%";
         if (computerChoice == 9) {
-            hidingSpot[8].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[8].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[8].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
@@ -460,7 +460,7 @@ function watchtowerSearch() {
         hidingSpot[9].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[9].style.backgroundSize = "100% 100%";
         if (computerChoice == 10) {
-            hidingSpot[9].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[9].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[9].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
@@ -474,7 +474,7 @@ function watchtowerSearch() {
         hidingSpot[10].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[10].style.backgroundSize = "100% 100%";
         if (computerChoice == 11) {
-            hidingSpot[10].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[10].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[10].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
@@ -488,7 +488,7 @@ function watchtowerSearch() {
         hidingSpot[11].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[11].style.backgroundSize = "100% 100%";
         if (computerChoice == 12) {
-            hidingSpot[11].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[11].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[11].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
@@ -502,7 +502,7 @@ function watchtowerSearch() {
         hidingSpot[12].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[12].style.backgroundSize = "100% 100%";
         if (computerChoice == 13) {
-            hidingSpot[12].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[12].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[12].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
@@ -516,7 +516,7 @@ function watchtowerSearch() {
         hidingSpot[13].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[13].style.backgroundSize = "100% 100%";
         if (computerChoice == 14) {
-            hidingSpot[13].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[13].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[13].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {
@@ -530,7 +530,7 @@ function watchtowerSearch() {
         hidingSpot[14].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[14].style.backgroundSize = "100% 100%";
         if (computerChoice == 15) {
-            hidingSpot[14].style.backgroundImage = "url(Bullseye.png)";
+            hidingSpot[14].style.backgroundImage = "url(bullseye.png)";
             hidingSpot[14].style.backgroundSize = "100% 100%";
             successfulMission();
         } else {

@@ -84,6 +84,20 @@ function highlightWest() {
     hidingSpot[11].style.boxShadow = "0 0 10px red";
 }
 
+// Darken the Western areas if the troublemaker is not there
+function darkenWest() {
+    hidingSpot[0].style.borderColor = "indigo";
+    hidingSpot[0].style.boxShadow = "0 0 0 indigo";
+    hidingSpot[1].style.borderColor = "indigo";
+    hidingSpot[1].style.boxShadow = "0 0 0 indigo";
+    hidingSpot[5].style.borderColor = "indigo";
+    hidingSpot[5].style.boxShadow = "0 0 0 indigo";
+    hidingSpot[10].style.borderColor = "indigo";
+    hidingSpot[10].style.boxShadow = "0 0 0 indigo";
+    hidingSpot[11].style.borderColor = "indigo";
+    hidingSpot[11].style.boxShadow = "0 0 0 indigo";
+}
+
 // Highlight the Eastern areas if the troublemaker is there
 function highlightEast() {
     hidingSpot[3].style.borderColor = "red";
@@ -96,6 +110,20 @@ function highlightEast() {
     hidingSpot[13].style.boxShadow = "0 0 10px red";
     hidingSpot[14].style.borderColor = "red";
     hidingSpot[14].style.boxShadow = "0 0 10px red";
+}
+
+// Darken the Eastern areas if the troublemaker is not there
+function darkenEast() {
+    hidingSpot[3].style.borderColor = "indigo";
+    hidingSpot[3].style.boxShadow = "0 0 0 indigo";
+    hidingSpot[4].style.borderColor = "indigo";
+    hidingSpot[4].style.boxShadow = "0 0 0 indigo";
+    hidingSpot[9].style.borderColor = "indigo";
+    hidingSpot[9].style.boxShadow = "0 0 0 indigo";
+    hidingSpot[13].style.borderColor = "indigo";
+    hidingSpot[13].style.boxShadow = "0 0 0 indigo";
+    hidingSpot[14].style.borderColor = "indigo";
+    hidingSpot[14].style.boxShadow = "0 0 0 indigo";
 }
 
 // Highlight the Central areas if the troublemaker is there
@@ -112,6 +140,21 @@ function highlightCenter() {
     hidingSpot[12].style.boxShadow = "0 0 10px red";
 }
 
+// Darken the Central areas if the troublemaker is not there
+function darkenCenter() {
+    hidingSpot[2].style.borderColor = "indigo";
+    hidingSpot[2].style.boxShadow = "0 0 0 indigo";
+    hidingSpot[6].style.borderColor = "indigo";
+    hidingSpot[6].style.boxShadow = "0 0 0 indigo";
+    hidingSpot[7].style.borderColor = "indigo";
+    hidingSpot[7].style.boxShadow = "0 0 0 indigo";
+    hidingSpot[8].style.borderColor = "indigo";
+    hidingSpot[8].style.boxShadow = "0 0 0 indigo";
+    hidingSpot[12].style.borderColor = "indigo";
+    hidingSpot[12].style.boxShadow = "0 0 0 indigo";
+}
+
+
 // Function for the given hints to the player
 function intel() {
     if (turns == 2) {
@@ -120,14 +163,20 @@ function intel() {
             if (guess == 1) {
                 intelligence.innerText = "";
                 machineVoice2Play();
+                highlightWest();
+                highlightEast();
                 typeWriter("Report: The troublemaker is NOT in the Central Areas, 2 shots");
             } else if (guess == 2) {
                 intelligence.innerText = "";
                 machineVoice2Play();
+                highlightWest();
+                highlightEast();
                 typeWriter("Report: The troublemaker is NOT in the Central Areas, 2 shots");
             } else {
                 intelligence.innerText = "";
                 machineVoice2Play();
+                highlightWest();
+                highlightCenter();
                 typeWriter("Report: The troublemaker is NOT in the Eastern Areas, 2 shots");
             }
         }
@@ -135,14 +184,20 @@ function intel() {
             if (guess == 1) {
                 intelligence.innerText = "";
                 machineVoice2Play();
+                highlightCenter();
+                highlightEast();
                 typeWriter("Report: The troublemaker is NOT in the Western Areas, 2 shots");
             } else if (guess == 2) {
                 intelligence.innerText = "";
                 machineVoice2Play();
+                highlightWest();
+                highlightEast();
                 typeWriter("Report: The troublemaker is NOT in the Central Areas, 2 shots");
             } else {
                 intelligence.innerText = "";
                 machineVoice2Play();
+                highlightCenter();
+                highlightEast();
                 typeWriter("Report: The troublemaker is NOT in the Western Areas, 2 shots");
             }
         }
@@ -150,14 +205,20 @@ function intel() {
             if (guess == 1) {
                 intelligence.innerText = "";
                 machineVoice2Play();
+                highlightCenter();
+                highlightEast();
                 typeWriter("Report: The troublemaker is NOT in the Western Areas, 2 shots");
             } else if (guess == 2) {
                 intelligence.innerText = "";
                 machineVoice2Play();
+                highlightWest();
+                highlightCenter();
                 typeWriter("Report: The troublemaker is NOT in the Eastern Areas, 2 shots");
             } else {
                 intelligence.innerText = "";
                 machineVoice2Play();
+                highlightWest();
+                highlightCenter();
                 typeWriter("Report: The troublemaker is NOT in the Eastern Areas, 2 shots");
             }
         }
@@ -168,18 +229,24 @@ function intel() {
             intelligence.innerText = "";
             machineVoice3Play();
             highlightWest();
+            darkenCenter();
+            darkenEast();
             typeWriter("Intelligence: Movement discovered in the Western areas, 1 last shot");
         }
         if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
             intelligence.innerText = "";
             machineVoice3Play();
             highlightEast();
+            darkenWest();
+            darkenCenter();
             typeWriter("Intelligence: Sensors pick up noises in the Eastern areas, 1 last shot");
         }
         if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
             intelligence.innerText = "";
             machineVoice3Play();
             highlightCenter();
+            darkenWest();
+            darkenEast();
             typeWriter("Intelligence: Rumors of a figure in the Central areas, 1 last shot");
         }
     }

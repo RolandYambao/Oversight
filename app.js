@@ -72,44 +72,44 @@ function failedAttack() {
 
 // Highlight the Western areas if the troublemaker is there
 function highlightWest() {
-    document.getElementById("hidingSpot1").style.borderColor = "red";
-    document.getElementById("hidingSpot1").style.boxShadow = "0 0 10px red";
-    document.getElementById("hidingSpot2").style.borderColor = "red";
-    document.getElementById("hidingSpot2").style.boxShadow = "0 0 10px red";
-    document.getElementById("hidingSpot6").style.borderColor = "red";
-    document.getElementById("hidingSpot6").style.boxShadow = "0 0 10px red";
-    document.getElementById("hidingSpot11").style.borderColor = "red";
-    document.getElementById("hidingSpot11").style.boxShadow = "0 0 10px red";
-    document.getElementById("hidingSpot12").style.borderColor = "red";
-    document.getElementById("hidingSpot12").style.boxShadow = "0 0 10px red";
+    hidingSpot[0].style.borderColor = "red";
+    hidingSpot[0].style.boxShadow = "0 0 10px red";
+    hidingSpot[1].style.borderColor = "red";
+    hidingSpot[1].style.boxShadow = "0 0 10px red";
+    hidingSpot[5].style.borderColor = "red";
+    hidingSpot[5].style.boxShadow = "0 0 10px red";
+    hidingSpot[10].style.borderColor = "red";
+    hidingSpot[10].style.boxShadow = "0 0 10px red";
+    hidingSpot[11].style.borderColor = "red";
+    hidingSpot[11].style.boxShadow = "0 0 10px red";
 }
 
 // Highlight the Eastern areas if the troublemaker is there
 function highlightEast() {
-    document.getElementById("hidingSpot4").style.borderColor = "red";
-    document.getElementById("hidingSpot4").style.boxShadow = "0 0 10px red";
-    document.getElementById("hidingSpot5").style.borderColor = "red";
-    document.getElementById("hidingSpot5").style.boxShadow = "0 0 10px red";
-    document.getElementById("hidingSpot10").style.borderColor = "red";
-    document.getElementById("hidingSpot10").style.boxShadow = "0 0 10px red";
-    document.getElementById("hidingSpot14").style.borderColor = "red";
-    document.getElementById("hidingSpot14").style.boxShadow = "0 0 10px red";
-    document.getElementById("hidingSpot15").style.borderColor = "red";
-    document.getElementById("hidingSpot15").style.boxShadow = "0 0 10px red";
+    hidingSpot[3].style.borderColor = "red";
+    hidingSpot[3].style.boxShadow = "0 0 10px red";
+    hidingSpot[4].style.borderColor = "red";
+    hidingSpot[4].style.boxShadow = "0 0 10px red";
+    hidingSpot[9].style.borderColor = "red";
+    hidingSpot[9].style.boxShadow = "0 0 10px red";
+    hidingSpot[13].style.borderColor = "red";
+    hidingSpot[13].style.boxShadow = "0 0 10px red";
+    hidingSpot[14].style.borderColor = "red";
+    hidingSpot[14].style.boxShadow = "0 0 10px red";
 }
 
 // Highlight the Central areas if the troublemaker is there
 function highlightCenter() {
-    document.getElementById("hidingSpot3").style.borderColor = "red";
-    document.getElementById("hidingSpot3").style.boxShadow = "0 0 10px red";
-    document.getElementById("hidingSpot7").style.borderColor = "red";
-    document.getElementById("hidingSpot7").style.boxShadow = "0 0 10px red";
-    document.getElementById("hidingSpot8").style.borderColor = "red";
-    document.getElementById("hidingSpot8").style.boxShadow = "0 0 10px red";
-    document.getElementById("hidingSpot9").style.borderColor = "red";
-    document.getElementById("hidingSpot9").style.boxShadow = "0 0 10px red";
-    document.getElementById("hidingSpot13").style.borderColor = "red";
-    document.getElementById("hidingSpot13").style.boxShadow = "0 0 10px red";
+    hidingSpot[2].style.borderColor = "red";
+    hidingSpot[2].style.boxShadow = "0 0 10px red";
+    hidingSpot[6].style.borderColor = "red";
+    hidingSpot[6].style.boxShadow = "0 0 10px red";
+    hidingSpot[7].style.borderColor = "red";
+    hidingSpot[7].style.boxShadow = "0 0 10px red";
+    hidingSpot[8].style.borderColor = "red";
+    hidingSpot[8].style.boxShadow = "0 0 10px red";
+    hidingSpot[12].style.borderColor = "red";
+    hidingSpot[12].style.boxShadow = "0 0 10px red";
 }
 
 // Function for the given hints to the player

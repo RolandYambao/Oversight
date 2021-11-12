@@ -70,6 +70,48 @@ function failedAttack() {
     failedMission();
 }
 
+// Highlight the Western areas if the troublemaker is there
+function highlightWest() {
+    document.getElementById("hidingSpot1").style.borderColor = "red";
+    document.getElementById("hidingSpot1").style.boxShadow = "0 0 10px red";
+    document.getElementById("hidingSpot2").style.borderColor = "red";
+    document.getElementById("hidingSpot2").style.boxShadow = "0 0 10px red";
+    document.getElementById("hidingSpot6").style.borderColor = "red";
+    document.getElementById("hidingSpot6").style.boxShadow = "0 0 10px red";
+    document.getElementById("hidingSpot11").style.borderColor = "red";
+    document.getElementById("hidingSpot11").style.boxShadow = "0 0 10px red";
+    document.getElementById("hidingSpot12").style.borderColor = "red";
+    document.getElementById("hidingSpot12").style.boxShadow = "0 0 10px red";
+}
+
+// Highlight the Eastern areas if the troublemaker is there
+function highlightEast() {
+    document.getElementById("hidingSpot4").style.borderColor = "red";
+    document.getElementById("hidingSpot4").style.boxShadow = "0 0 10px red";
+    document.getElementById("hidingSpot5").style.borderColor = "red";
+    document.getElementById("hidingSpot5").style.boxShadow = "0 0 10px red";
+    document.getElementById("hidingSpot10").style.borderColor = "red";
+    document.getElementById("hidingSpot10").style.boxShadow = "0 0 10px red";
+    document.getElementById("hidingSpot14").style.borderColor = "red";
+    document.getElementById("hidingSpot14").style.boxShadow = "0 0 10px red";
+    document.getElementById("hidingSpot15").style.borderColor = "red";
+    document.getElementById("hidingSpot15").style.boxShadow = "0 0 10px red";
+}
+
+// Highlight the Central areas if the troublemaker is there
+function highlightCenter() {
+    document.getElementById("hidingSpot3").style.borderColor = "red";
+    document.getElementById("hidingSpot3").style.boxShadow = "0 0 10px red";
+    document.getElementById("hidingSpot7").style.borderColor = "red";
+    document.getElementById("hidingSpot7").style.boxShadow = "0 0 10px red";
+    document.getElementById("hidingSpot8").style.borderColor = "red";
+    document.getElementById("hidingSpot8").style.boxShadow = "0 0 10px red";
+    document.getElementById("hidingSpot9").style.borderColor = "red";
+    document.getElementById("hidingSpot9").style.boxShadow = "0 0 10px red";
+    document.getElementById("hidingSpot13").style.borderColor = "red";
+    document.getElementById("hidingSpot13").style.boxShadow = "0 0 10px red";
+}
+
 // Function for the given hints to the player
 function intel() {
     if (turns == 2) {
@@ -125,16 +167,19 @@ function intel() {
         if (computerChoice == 1 || computerChoice == 2 || computerChoice == 6 || computerChoice == 11 || computerChoice == 12) {
             intelligence.innerText = "";
             machineVoice3Play();
+            highlightWest();
             typeWriter("Intelligence: Movement discovered in the Western areas, 1 last shot");
         }
         if (computerChoice == 4 || computerChoice == 5 || computerChoice == 10 || computerChoice == 14 || computerChoice == 15) {
             intelligence.innerText = "";
             machineVoice3Play();
+            highlightEast();
             typeWriter("Intelligence: Sensors pick up noises in the Eastern areas, 1 last shot");
         }
         if (computerChoice == 3 || computerChoice == 7 || computerChoice == 8 || computerChoice == 9 || computerChoice == 13) {
             intelligence.innerText = "";
             machineVoice3Play();
+            highlightCenter();
             typeWriter("Intelligence: Rumors of a figure in the Central areas, 1 last shot");
         }
     }

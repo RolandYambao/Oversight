@@ -73,7 +73,7 @@ function typeWriter(phrase) {
     }
 }
 
-// Function to stop all typing
+// Function to stop all typing, an interesting "Hack" I found in Stack Overflow
 function stopTyping() {
     const allTimeouts = setTimeout(" ");
     for (let i = 0; i < allTimeouts; i++) {

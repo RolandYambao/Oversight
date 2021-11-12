@@ -280,7 +280,7 @@ function failedMission() {
 function successfulMission() {
     intelligence.innerText = "";
     openFire();
-    music.setAttribute("src", "universalTriumph.mp3");
+    music.setAttribute("src", "theInnerPartySpeaker.mp3");
     music.volume = 0.1;
     machineVoice5Play();
     typeWriter("Mission Accomplished, Click Here to Play Again");

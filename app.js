@@ -178,7 +178,6 @@ function darkenCenter() {
     hidingSpot[12].style.boxShadow = "0 0 0 indigo";
 }
 
-
 // Function for the given hints to the player
 function intel() {
     if (turns == 2) {

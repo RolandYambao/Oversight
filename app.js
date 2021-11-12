@@ -313,9 +313,6 @@ function successfulMission() {
     darkenWest();
     darkenCenter();
     darkenEast();
-    intelligence.addEventListener("click", function () {
-        location.reload();
-    })
     for (let i = 0; i < 15; i++) {
         hidingSpot[i].addEventListener("click", function () {
             location.reload();

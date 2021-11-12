@@ -53,3 +53,7 @@ function failedMission() {
 7. Marco Di Lauro on Getty Images - Destroyed Building Image
 8. Acegif - Fire Background on Defeat Screen
 9. Adobe Stock - Red Crosshair Image
+
+# Licensing
+1. All credited content is under the Fair Use Law.
+2. Code written by me is licensed under a CC-BY-NC-SA 4.0 license.

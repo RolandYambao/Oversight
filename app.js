@@ -429,7 +429,6 @@ function watchtowerSearch() {
         hidingSpot[9].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[9].style.backgroundSize = "100% 100%";
         if (computerChoice == 10) {
-            ;
             hidingSpot[9].style.backgroundImage = "url(Bullseye.png)";
             hidingSpot[9].style.backgroundSize = "100% 100%";
             successfulMission();

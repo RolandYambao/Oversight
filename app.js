@@ -75,7 +75,7 @@ function typeWriter(phrase) {
 
 // Function to stop all typing
 function stopTyping() {
-    let allTimeouts = setTimeout(" ");
+    const allTimeouts = setTimeout(" ");
     for (let i = 0; i < allTimeouts; i++) {
         clearTimeout(i);
     }

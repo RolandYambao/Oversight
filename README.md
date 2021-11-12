@@ -47,8 +47,9 @@ function failedMission() {
 1. Command & Conquer 3: Tiberium Wars (2007) - Background Music (Gathering Intel) and Defeat Music (Mourning Hour)
 2. 1984 (1984) remixed by Willard Networks - Victory Music (The Inner Party Speaker) remix name: Anthem of City Twenty-Four
 3. Warhammer 40,000: Mechanicus (2020) - Machine Voices
-4. Cisco Eng-emojis from Giphy - Security Camera gif
-5. WallpaperAccess - Ruined City Background
-6. Marco Di Lauro on Getty Images - Destroyed Building Image
-7. Acegif - Fire Background on Defeat Screen
-8. Adobe Stock - Red Crosshair Image
+4. SFX AND STUFF from YouTube - Cannon Sound Effect
+5. Cisco Eng-emojis from Giphy - Security Camera gif
+6. WallpaperAccess - Ruined City Background
+7. Marco Di Lauro on Getty Images - Destroyed Building Image
+8. Acegif - Fire Background on Defeat Screen
+9. Adobe Stock - Red Crosshair Image

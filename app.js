@@ -23,6 +23,12 @@ machineVoice2.src = "mechanicusVoice2.mp3";
 const machineVoice3 = new Audio();
 machineVoice3.src = "mechanicusVoice3.mp3";
 
+const machineVoice4 = new Audio();
+machineVoice4.src = "mechanicusVoice4.mp3";
+
+const machineVoice5 = new Audio();
+machineVoice5.src = "mechanicusVoice5.mp3";
+
 // Functions for Sound Effects
 function machineVoice1Play() {
     machineVoice1.play();
@@ -35,6 +41,14 @@ function machineVoice2Play() {
 function machineVoice3Play() {
     machineVoice3.play();
     machineVoice3.volume = 0.5;
+}
+function machineVoice4Play() {
+    machineVoice4.play();
+    machineVoice4.volume = 0.5;
+}
+function machineVoice5Play() {
+    machineVoice5.play();
+    machineVoice5.volume = 0.5;
 }
 function openFire() {
     explosion.play();
@@ -140,6 +154,7 @@ function failedMission() {
             hidingSpot[i].style.borderColor = "red";
         }
         intelligence.innerText = "";
+        machineVoice4Play();
         typeWriter("Mission Failed, we have been Destroyed, Click Here to Play Again");
         for (let i = 0; i < 15; i++) {
             hidingSpot[i].addEventListener("click", function () {
@@ -155,6 +170,7 @@ function successfulMission() {
     openFire();
     music.setAttribute("src", "universalTriumph.mp3");
     music.volume = 0.1;
+    machineVoice5Play();
     typeWriter("Mission Accomplished, Click Here to Play Again");
     intelligence.style.color = "white";
     intelligence.addEventListener("click", function () {

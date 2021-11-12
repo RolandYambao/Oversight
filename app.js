@@ -75,11 +75,17 @@ function typeWriter(phrase) {
 
 // Function to stop all typing
 function stopTyping() {
-    let highestTimeout = setTimeout(";");
-    for (let i = 0; i < highestTimeout; i++) {
+    let allTimeouts = setTimeout(" ");
+    for (let i = 0; i < allTimeouts; i++) {
         clearTimeout(i);
     }
     intelligence.innerText = "";
+}
+
+// Function to stop explosion sound to begin next one
+function nextExplosion() {
+    explosion.pause();
+    explosion.currentTime = 0;
 }
 
 // Function for the failure of one Attack
@@ -327,6 +333,7 @@ function watchtowerSearch() {
     })
 
     hidingSpot[0].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[0].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[0].style.backgroundSize = "100% 100%";
@@ -340,6 +347,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[1].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[1].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[1].style.backgroundSize = "100% 100%";
@@ -353,6 +361,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[2].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[2].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[2].style.backgroundSize = "100% 100%";
@@ -366,6 +375,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[3].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[3].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[3].style.backgroundSize = "100% 100%";
@@ -379,6 +389,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[4].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[4].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[4].style.backgroundSize = "100% 100%";
@@ -392,6 +403,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[5].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[5].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[5].style.backgroundSize = "100% 100%";
@@ -405,6 +417,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[6].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[6].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[6].style.backgroundSize = "100% 100%";
@@ -418,6 +431,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[7].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[7].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[7].style.backgroundSize = "100% 100%";
@@ -431,6 +445,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[8].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[8].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[8].style.backgroundSize = "100% 100%";
@@ -444,6 +459,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[9].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[9].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[9].style.backgroundSize = "100% 100%";
@@ -457,6 +473,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[10].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[10].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[10].style.backgroundSize = "100% 100%";
@@ -470,6 +487,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[11].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[11].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[11].style.backgroundSize = "100% 100%";
@@ -483,6 +501,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[12].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[12].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[12].style.backgroundSize = "100% 100%";
@@ -496,6 +515,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[13].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[13].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[13].style.backgroundSize = "100% 100%";
@@ -509,6 +529,7 @@ function watchtowerSearch() {
         }
     })
     hidingSpot[14].addEventListener("click", function () {
+        nextExplosion();
         openFire();
         hidingSpot[14].style.backgroundImage = "url(destroyedBuilding.jpg)";
         hidingSpot[14].style.backgroundSize = "100% 100%";

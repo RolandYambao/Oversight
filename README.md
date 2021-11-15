@@ -8,7 +8,13 @@ Oversight is a simple game project to test my capabilities in utilizing HTML, CS
 This game utilized the frotn end languages of HTML, CSS, and JavaScript. It uses a variety of image and sound assets imported from other sources to create the polished aesthetic experience of the game. After forming the divs in HTML, and its organization done in CSS, the JavaScript DOM system was primarily utilized for the user interaction in the game.
 
 ## Development Approach
-The code of the game is formed through a variety of functions that perform specific tasks critical for the game operation. All these functions call to each other and there is one starting function the starts game operation.
+The code of the game is formed through a variety of functions that perform specific tasks critical for the game operation. All these functions call to each other and there is one starting function the starts game operation. I made it so that the game's many functions become operable only after certain mouse clicks occur on specific blocks. This way the game functions from a button click to button click methodology.
+
+## Installation
+Simply have all files in this repository be together and open it to a live server, if not go here: https://rolandyambao.github.io/Oversight/
+
+## Unsolved Problems
+Not really a problem, but one potential point of improvement is finding ways to make the aesthetics more dynamic, ex. an explosive animation plays upon clicking on a block.
 
 ## Code Example
 ~~~js

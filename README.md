@@ -7,6 +7,9 @@ Oversight is a simple game project to test my capabilities in utilizing HTML, CS
 ## Code Style
 The code of the game is formed through a variety of functions that perform specific tasks critical for the game operation. All these functions call to each other and there is one starting function the starts game operation.
 
+## Technologies
+This game utilized the frotn end languages of HTML, CSS, and JavaScript. It uses a variety of image and sound assets imported from other sources to create the polished aesthetic experience of the game. After forming the divs in HTML, and its organization done in CSS, the JavaScript DOM system was primarily utilized for the user interaction in the game.
+
 ## Code Example
 ~~~js
 // Function for the Failure of the player

@@ -309,6 +309,9 @@ function watchtowerSearch() {
 6. After two shots, the Watchtower has one shot left, with one piece of intel stating which directional region the troublemaker is in.
 7. If the Watchtower hits the troublemaker, it wins, if it misses, it loses.
 
+## Reflections:
+I was surprised that so much time can be spent on making sure specific tidbits and aesthetic occurances are properly utilized. For example, the typeWriter function, if multiple sentences are typing at the same time, this can have multiple garbled text morphed together if the player moves through the game too quickly. I had to create a stopTyping function to ensure that the text are not displaying incorrectly. The sound effects as well, stopExplosion was created so that a new explosion sound is played once a block is clicked again, previously if you click another block before an explosion sound finishes, it won't play another sound.
+
 ## Credits:
 1. Command & Conquer 3: Tiberium Wars (2007) - Background Music (Gathering Intel) and Defeat Music (Mourning Hour)
 2. 1984 (1984) remixed by Willard Networks - Victory Music (The Inner Party Speaker) remix name: Anthem of City Twenty-Four

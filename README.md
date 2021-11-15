@@ -5,7 +5,7 @@ A game where you play as a stationary watchtower who must guess its way in searc
 Oversight is a simple game project to test my capabilities in utilizing HTML, CSS, and JavaScript. I utilize the three front end languages to craft a fun and simple game experience.
 
 ## Technologies
-This game utilized the frotn end languages of HTML, CSS, and JavaScript. It uses a variety of image and sound assets imported from other sources to create the polished aesthetic experience of the game. After forming the divs in HTML, and its organization done in CSS, the JavaScript DOM system was primarily utilized for the user interaction in the game.
+This game utilized the front end languages of HTML, CSS, and JavaScript. It uses a variety of image and sound assets imported from other sources to create the polished aesthetic experience of the game. After forming the divs in HTML, and its organization done in CSS, the JavaScript DOM system was primarily utilized for the user interaction in the game.
 
 ## Development Approach
 The code of the game is formed through a variety of functions that perform specific tasks critical for the game operation. All these functions call to each other and there is one starting function the starts game operation. I made it so that the game's many functions become operable only after certain mouse clicks occur on specific blocks. This way the game functions from a button click to button click methodology.
@@ -21,6 +21,7 @@ Not really a problem, but one potential point of improvement is finding ways to 
 // Function for the Failure of the player
 function failedMission() {
     if (turns == 6) {
+        stopTyping();
         music.setAttribute("src", "defeatMusic.mp3");
         music.volume = 0.5;
         document.getElementById("title").innerHTML = "Oversight".strike();
@@ -32,9 +33,8 @@ function failedMission() {
         highlightWest();
         highlightCenter();
         highlightEast();
-        intelligence.innerText = "";
         machineVoice4Play();
-        typeWriter("Mission Failed, we have been Destroyed, Click Here to Play Again");
+        typeWriter(defeat);
         for (let i = 0; i < 15; i++) {
             hidingSpot[i].addEventListener("click", function () {
                 location.reload();

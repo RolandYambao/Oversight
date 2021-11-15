@@ -45,7 +45,7 @@ function failedMission() {
 ~~~
 
 ## Screenshot:
-![Alt text](oversightScreenshot.png "Optional Title")
+![Alt text](oversightScreenshot.png "Oversight Screenshot")
 
 ## Game Loop:
 1. There is one player versus a computer, the player is the watchtower and the computer is the troublemaker.

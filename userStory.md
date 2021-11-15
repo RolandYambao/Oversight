@@ -22,5 +22,8 @@ A game where you play as a stationary watchtower who must guess its way in searc
 ## Aesthetic and Theme:
 The game has a very surveillance theme to it combined with a Real Time Strategy sense of control. I grew up playing strategy games and I love the overpowering aura it gives the player in controlling units and destroying enemies. There is only one unit to control in this game, and one enemy to destroy however. The colors and atmosphere of the game mimics the style of many past RTS games.
 
+## Wireframe:
+![Alt text](wireframeOversight.png "Oversight Wireframe")
+
 ## Completion:
 The game is complete when it satisfies a decent gameplay loop and has a reasonably complicated and desirable aesthetic spirit for a mere front end language game containing no professional art asset development theme. I sincerely strive to create an art piece of a game with what simple resources I have.

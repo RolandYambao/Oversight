@@ -2,7 +2,7 @@
 A game where you play as a stationary watchtower who must guess its way in searching for the troublemaker down below. Look at the hint to succeed and prevent the enemy from destroying you.
 
 ## Purpose:
-Oversight is a simple game project to test my capabilities in utilizing HTML, CSS, and JavaScript. I utilize the three front end languages to craft a fun and simple game experience.
+Oversight is a simple game project to test my capabilities in utilizing HTML, CSS, and JavaScript. I utilize the three front end languages to craft a fun and simple game experience that posses an interesting and appealing aesthetic. 
 
 ## Technologies:
 This game utilized the front end languages of HTML, CSS, and JavaScript. It uses a variety of image and sound assets imported from other sources to create the polished aesthetic experience of the game. After forming the divs in HTML, and its organization done in CSS, the JavaScript DOM system was primarily utilized for the user interaction in the game.

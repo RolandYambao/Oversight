@@ -248,9 +248,9 @@ function failedMission() {
 }
 ~~~
 
-9.successfulMission Function - This function displays the aesthetic presentation once the player destroys the troublemaker in time.
+9. successfulMission Function - This function displays the aesthetic presentation once the player destroys the troublemaker in time.
 ~~~js
-// Function for the Success of the player
+// Function for the Success of the playerSterling Eide
 function successfulMission() {
     stopTyping();
     openFire();
